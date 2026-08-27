@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" role="img" aria-labelledby="title desc">
+  <title id="title">Semantic cache similarity and false hit flowchart</title>
+  <desc id="desc">Two academic diagrams explain how cosine similarity can miss meaning and how a false hit is born.</desc>
+  <rect width="900" height="470" fill="#fafaf8"/>
+  <g font-family="Arial, sans-serif" fill="#17191a" stroke="#17191a" stroke-width="2">
+    <text x="34" y="32" font-size="15" font-weight="700" stroke="none">cosine similarity cannot see meaning</text>
+    <circle cx="210" cy="188" r="107" fill="none" stroke="#767d7f" stroke-dasharray="6 6"/>
+    <text x="134" y="104" font-size="11" fill="#697174" stroke="none">cosine threshold τ</text>
+    <circle cx="210" cy="188" r="27" fill="#d8f1ed" stroke="#289b91"/>
+    <text x="166" y="183" font-size="10" stroke="none">cached:</text><text x="157" y="197" font-size="10" stroke="none">"strengths of X?"</text>
+    <circle cx="130" cy="135" r="5" fill="#8c9698"/><text x="74" y="124" font-size="10" stroke="none">unrelated (miss)</text>
+    <circle cx="285" cy="140" r="6" fill="#49b8ac"/><text x="302" y="137" font-size="10" fill="#23877f" stroke="none">'merits of X?'</text><text x="302" y="151" font-size="10" fill="#23877f" stroke="none">same answer (true hit)</text>
+    <circle cx="284" cy="242" r="6" fill="#df7568"/><text x="302" y="238" font-size="10" fill="#b34c45" stroke="none">'weaknesses of X?'</text><text x="302" y="252" font-size="10" fill="#b34c45" stroke="none">opposite answer (false hit)</text>
+    <circle cx="145" cy="253" r="5" fill="#8c9698"/><circle cx="247" cy="285" r="5" fill="#8c9698"/>
+    <text x="132" y="340" font-size="12" stroke="none">(a) cosine similarity cannot see meaning</text>
+    <line x1="450" y1="55" x2="450" y2="392" stroke="#d4d6d4"/>
+    <text x="486" y="32" font-size="15" font-weight="700" stroke="none">where the false hit is born</text>
+    <rect x="480" y="73" width="70" height="35" rx="4" fill="#fff"/><text x="496" y="95" font-size="11" stroke="none">query q</text>
+    <path d="M550 90h34" fill="none" marker-end="url(#arrow)"/><rect x="584" y="73" width="70" height="35" rx="4" fill="#fff"/><text x="600" y="95" font-size="11" stroke="none">encode</text>
+    <path d="M654 90h34" fill="none" marker-end="url(#arrow)"/><rect x="688" y="73" width="92" height="35" rx="4" fill="#fff"/><text x="699" y="95" font-size="11" stroke="none">nearest c</text>
+    <path d="M734 108v40" fill="none" marker-end="url(#arrow)"/>
+    <path d="M734 148l38 27-38 27-38-27z" fill="#fff"/><text x="714" y="179" font-size="11" stroke="none">d ≥ τ?</text>
+    <path d="M696 175h-54v52" fill="none" marker-end="url(#arrow)"/><text x="660" y="168" font-size="10" fill="#b34c45" stroke="none">yes</text>
+    <path d="M772 175h48v52" fill="none" marker-end="url(#arrow)"/><text x="780" y="168" font-size="10" fill="#697174" stroke="none">no</text>
+    <rect x="586" y="227" width="108" height="36" rx="4" fill="#f9dfdc" stroke="#c85d54"/><text x="603" y="249" font-size="10" fill="#9e4039" stroke="none">hit → serve cache</text>
+    <rect x="778" y="227" width="92" height="36" rx="4" fill="#e7f5f2" stroke="#48a89e"/><text x="787" y="249" font-size="10" fill="#257d75" stroke="none">miss → model</text>
+    <text x="563" y="302" font-size="11" fill="#c85d54" stroke="none">false hit: a confident,</text><text x="563" y="317" font-size="11" fill="#c85d54" stroke="none">unflagged wrong answer</text>
+    <text x="582" y="340" font-size="12" stroke="none">(b) where the false hit is born</text>
+  </g>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#17191a" stroke="none"/></marker></defs>
+</svg>

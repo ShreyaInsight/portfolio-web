@@ -1,0 +1,144 @@
+//Import the THREE.js library
+import * as THREE from "https://cdn.skypack.dev/three@0.129.0/build/three.module.js";
+// To allow for the camera to move around the scene
+import { OrbitControls } from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/controls/OrbitControls.js";
+// To allow for importing the .gltf file
+import { GLTFLoader } from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/GLTFLoader.js";
+
+const container = document.getElementById("container3D");
+
+if (!container) {
+  throw new Error("Three.js container not found");
+}
+
+//Create a Three.JS Scene
+const scene = new THREE.Scene();
+//create a new camera with positions and angles
+const camera = new THREE.PerspectiveCamera(35, 1, 0.1, 1000);
+
+//Keep the 3D object on a global variable so we can access it later
+let object;
+let isDragging = false;
+let previousPointerX = 0;
+let rotationVelocityY = 0;
+
+//OrbitControls allow the camera to move around the scene
+let controls;
+
+//Set which object to render
+let objToRender = 'eye';
+
+//Instantiate a loader for the .gltf file
+const loader = new GLTFLoader();
+
+//Load the file
+loader.load(
+  `./sources/laptop (1)/laptop.gltf`,
+  function (gltf) {
+    //If the file is loaded, add it to the scene
+    object = gltf.scene;
+    const bounds = new THREE.Box3().setFromObject(object);
+    const center = bounds.getCenter(new THREE.Vector3());
+    const size = bounds.getSize(new THREE.Vector3());
+    const scale = 4.5 / Math.max(size.x, size.y, size.z);
+    object.scale.setScalar(scale);
+    object.position.sub(center.multiplyScalar(scale));
+    object.traverse((child) => {
+      if (child.isMesh && child.material.map) {
+        child.material.map.anisotropy = renderer.capabilities.getMaxAnisotropy();
+      }
+    });
+    scene.add(object);
+  },
+  function (xhr) {
+    //While it is loading, log the progress
+    console.log((xhr.loaded / xhr.total * 100) + '% loaded');
+  },
+  function (error) {
+    //If there is an error, log it
+    console.error(error);
+  }
+);
+
+//Instantiate a new renderer and set its size
+const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true }); //Alpha: true allows for the transparent background
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+renderer.setClearColor(0x000000, 0);
+renderer.outputEncoding = THREE.sRGBEncoding;
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.35;
+
+//Add the renderer to the DOM
+container.appendChild(renderer.domElement);
+
+//Set how far the camera will be from the 3D model
+camera.position.set(0, 0.2, objToRender === "dino" ? 25 : 10.5);
+
+//Add lights to the scene, so we can actually see the 3D model
+const topLight = new THREE.DirectionalLight(0xffffff, 1); // (color, intensity)
+topLight.position.set(500, 500, 500) //top-left-ish
+topLight.castShadow = true;
+scene.add(topLight);
+
+const ambientLight = new THREE.AmbientLight(0x665248, objToRender === "dino" ? 5 : 3.2);
+scene.add(ambientLight);
+
+//This adds controls to the camera, so we can rotate / zoom it with the mouse
+if (objToRender === "dino") {
+  controls = new OrbitControls(camera, renderer.domElement);
+}
+
+//Render the scene
+function animate() {
+  requestAnimationFrame(animate);
+  //Here we could add some code to update the scene, adding some automatic movement
+
+  if (object) {
+    object.rotation.y += rotationVelocityY;
+    rotationVelocityY *= isDragging ? 0.82 : 0.94;
+  }
+
+  renderer.render(scene, camera);
+}
+
+//Add a listener to the window, so we can resize the window and the camera
+function resizeRenderer() {
+  const { width, height } = container.getBoundingClientRect();
+  camera.aspect = width / height;
+  camera.updateProjectionMatrix();
+  renderer.setSize(width, height, false);
+}
+
+new ResizeObserver(resizeRenderer).observe(container);
+resizeRenderer();
+
+renderer.domElement.addEventListener("pointerdown", (event) => {
+  if (!object) return;
+  event.preventDefault();
+  isDragging = true;
+  previousPointerX = event.clientX;
+  rotationVelocityY = 0;
+  renderer.domElement.setPointerCapture(event.pointerId);
+});
+
+renderer.domElement.addEventListener("pointermove", (event) => {
+  if (!isDragging || !object) return;
+  const horizontalMovement = event.clientX - previousPointerX;
+  rotationVelocityY = horizontalMovement * 0.02;
+  object.rotation.y += rotationVelocityY;
+  previousPointerX = event.clientX;
+});
+
+function stopDragging(event) {
+  if (!isDragging) return;
+  isDragging = false;
+  if (renderer.domElement.hasPointerCapture(event.pointerId)) {
+    renderer.domElement.releasePointerCapture(event.pointerId);
+  }
+}
+
+renderer.domElement.addEventListener("pointerup", stopDragging);
+renderer.domElement.addEventListener("pointercancel", stopDragging);
+
+//Start the 3D rendering
+animate();

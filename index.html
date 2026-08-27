@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreya Chauhan · Software Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="sources/icon.svg" sizes="any" type="image/svg+xml">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">    
+</head>
+<body>
+    <header class="site-header mobile-header">
+        <nav class="nav" aria-label="Main navigation">
+            <a class="logo" href="index.html">shreya.chauhan</a>
+            <div class="nav-links">
+                <a class="nav-link" href="projects.html"><span>01</span>Projects</a>
+                <a class="nav-link" href="work.html"><span>02</span>Work</a>
+                <a class="nav-link" href="about.html"><span>03</span>About</a>
+            </div>
+            <div class="nav-actions">
+                <div class="search" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="6"></circle><path d="m16 16 4 4"></path></svg><span>Search</span><kbd class="shortcut">Ctrl K</kbd></div>
+                <a class="resume" href="resume.html" aria-current="page">Résumé</a>
+                <a class="touch" href="contact.html">Get in touch</a>
+            </div>
+        </nav>
+        <div class="mobile-header-bar">
+            <a class="logo" href="index.html">shreya.chauhan</a>
+            <button class="mobile-menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span><span></span></button>
+        </div>
+        <div class="mobile-menu" id="mobile-menu" data-mobile-menu hidden>
+            <nav aria-label="Mobile navigation">
+                <a href="projects.html"><span>01</span>Projects</a>
+                <a href="work.html"><span>02</span>Work</a>
+                <a href="about.html"><span>03</span>About</a>
+                <a href="resume.html"><span>04</span>Résumé</a>
+            </nav>
+            <a class="mobile-menu-cta" href="contact.html">Get in touch</a>
+        </div>
+    </header>
+    <script src="mobile-menu.js"></script>
+
+    <main id="top" class="hero">
+        <div class="ember-glow" aria-hidden="true"></div>
+        <section class="hero-copy" aria-labelledby="hero-title">
+            <div class="availability"><span class="pulse"></span>Open to software roles</div>
+            <h1 id="hero-title">I build the<br>whole stack,<br>from the screen<br>to the <em>silicon.</em></h1>
+            <p class="intro">I build full-stack software <em>people actually use</em>, and I understand it <em>the whole way down</em>, to the systems most apps just sit on top of. Give me the hardest problem in your stack, the one that has to hold, and I'll <em>own it end to end</em>.</p>
+            <div class="buttons"><a class="work-button" href="#projects">See the work <span class="arrow">→</span></a><a class="resume-link" href="#resume">Résumé ↗</a></div>
+            <div class="session" aria-label="Boot session status">
+                <div class="session-head"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span>SESSION</span></div>
+                <div class="session-lines"><div class="command typing-row" data-typing-row="$ boot --profile shreya"></div><div class="typing-row" data-typing-row="&#160;&#160;interface ............ ok"></div><div class="typing-row" data-typing-row="&#160;&#160;application ........... ok"></div><div class="typing-row" data-typing-row="&#160;&#160;systems ............... ok"></div><div class="typing-row" data-typing-row="&#160;&#160;infrastructure ........ ok"></div><div class="session-result typing-row" data-typing-row="→ all layers online"><span class="cursor" aria-hidden="true"></span></div></div>
+            </div>
+        </section>
+        <div id="container3D" class="illustration-wrap" aria-label="Interactive 3D laptop"></div>
+    </main>
+    <section id="projects" class="selected-work" aria-labelledby="work-title">
+        <div class="work-inner">
+            <div class="eyebrow">SELECTED WORK</div>
+            <div class="work-heading-row">
+                <h2 id="work-title" class="work-heading">Things people actually use.</h2>
+                <a class="all-projects" href="#projects">All projects ↗</a>
+            </div>
+            <div class="projects-grid">
+                <article class="project">
+                    <div class="preview">
+                        <div class="browser-bar"><span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span></div>
+                        <div class="preview-content basalt-preview"><span class="hex"></span><span class="preview-kicker">HAZARD ANALYSIS / 01</span><h3>The hazard check NVIDIA never shipped.</h3><p class="preview-copy">A systems-level assessment for the edge cases hiding in your stack.</p><span class="progress"></span></div>
+                    </div>
+                    <div class="project-meta"><strong class="project-name">basalt</strong><span class="project-year">2026</span></div>
+                    <p class="project-description">The check NVIDIA never shipped</p>
+                    <div class="project-status"><span class="status-dot"></span>Actively maintained</div>
+                </article>
+                <article class="project">
+                    <div class="preview">
+                        <div class="browser-bar"><span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span><span class="url">ats-screener.vercel.app</span></div>
+                        <div class="preview-content ats-preview"><span class="preview-kicker">ATS SCREENER / RESUME INTELLIGENCE</span><h3>Your Resume vs.<br><span>Real ATS Systems</span></h3><div class="ats-badges"><span class="ats-badge">6 engines</span><span class="ats-badge">match score</span><span class="ats-badge">live</span></div></div>
+                    </div>
+                    <div class="project-meta"><strong class="project-name">ATS Screener</strong><span class="project-year">2026</span></div>
+                    <p class="project-description">Your resume vs. 6 real enterprise ATS engines</p>
+                    <div class="project-status"><span class="status-dot"></span>Actively maintained</div>
+                </article>
+                <article class="project">
+                    <div class="preview">
+                        <div class="browser-bar"><span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span></div>
+                        <div class="preview-content sunnify-preview"><div class="sun-panel"><span class="sun-label">Sunnify</span><div class="sun-lines">playlist / 04<br><br>Midnight City<br>Soft Focus<br>Electric Feel<br><br>♫ now playing</div></div><div class="sun-panel"><span class="sun-label">Song Information</span><div class="album">?</div><div class="sun-lines">Song: Midnight<br>Artist: M83<br>Album: Hurry Up</div></div></div>
+                    </div>
+                    <div class="project-meta"><strong class="project-name">Sunnify</strong><span class="project-year">2024</span></div>
+                    <p class="project-description">Spotify playlists to tagged local audio</p>
+                    <div class="project-status"><span class="status-dot"></span>Actively maintained</div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="capabilities" aria-labelledby="capabilities-title">
+        <div class="capabilities-inner">
+            <div id="capabilities-title" class="eyebrow">WHAT I DO</div>
+            <div class="capability-list">
+                <div class="capability-row">
+                    <div class="capability-title"><span class="capability-number">01</span>Product engineering</div>
+                    <div class="capability-description">Real-time, type-safe web apps people use every day, taken from first pixel to production.</div>
+                </div>
+                <div class="capability-row">
+                    <div class="capability-title"><span class="capability-number">02</span>Systems &amp; infrastructure</div>
+                    <div class="capability-description">Directories, networks, and automation kept reliable at scale, including a 3,000+ object M&amp;A cutover with zero downtime.</div>
+                </div>
+                <div class="capability-row">
+                    <div class="capability-title"><span class="capability-number">03</span>Cloud &amp; delivery</div>
+                    <div class="capability-description">Docker and Kubernetes, CI/CD, and the automation that moves work from my machine to production safely and repeatably.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="work" class="currently" aria-labelledby="currently-title">
+        <div class="currently-inner">
+            <div class="eyebrow">CURRENTLY</div>
+            <div class="currently-content">
+                <div>
+                    <h2 id="currently-title" class="currently-role">Software Developer Intern at IBM.</h2>
+                    <p class="currently-detail">Full-stack engineering on watsonx Workshop at IBM.</p>
+                </div>
+                <a class="path-link" href="#work">See the full path ↗</a>
+            </div>
+        </div>
+    </section>
+    <section id="resume" class="closing-cta" aria-labelledby="cta-title">
+        <h2 id="cta-title" class="cta-title">Have something worth building?</h2>
+        <p class="cta-detail">Open to new-grad roles and problems worth the effort.</p>
+        <a class="cta-button" href="mailto:cshreya2005@gmail.com">Get in touch</a>
+    </section>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div>
+                    <div class="footer-brand">shreya.chauhan</div>
+                    <div class="footer-location">Software developer, Greater Toronto Area, Canada</div>
+                </div>
+                <nav class="footer-links" aria-label="Footer navigation">
+                    <a class="footer-link" href="#projects">Projects</a>
+                    <a class="footer-link" href="#work">Work</a>
+                    <a class="footer-link" href="#about">About</a>
+                </nav>
+                <nav class="footer-social" aria-label="Social links">
+                    <a class="footer-link" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+                    <a class="footer-link" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+                    <a class="footer-link" href="mailto:cshreya2005@gmail.com">Email</a>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-note">© 2026 Shreya Chauhan</div>
+                <div class="footer-controls" aria-label="Page controls">
+                </div>
+                <div class="footer-credit">Designed and built from scratch.</div>
+            </div>
+        </div>
+    </footer>
+    <button class="scroll-top" type="button" aria-label="Scroll to top" data-scroll-top>↑</button>
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script type="module" src="threeD.js"></script>
+    <script>
+        const lenis = new Lenis({
+            autoRaf: false,
+            smoothWheel: true,
+            syncTouch: true,
+            touchMultiplier: 1
+        });
+        document.documentElement.classList.add('lenis');
+
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+        requestAnimationFrame(raf);
+
+        const scrollTopButtons = document.querySelectorAll('[data-scroll-top]');
+        const scrollTopControl = document.querySelector('.scroll-top');
+        const projectControl = document.querySelector('[data-scroll-projects]');
+        const typingRows = document.querySelectorAll('[data-typing-row]');
+        const hero = document.querySelector('.hero');
+        const emberGlow = document.querySelector('.ember-glow');
+
+        document.querySelectorAll('a[href^="#"]').forEach((link) => {
+            link.addEventListener('click', (event) => {
+                const targetId = link.getAttribute('href');
+                const target = document.querySelector(targetId);
+                if (!target) return;
+                event.preventDefault();
+                lenis.scrollTo(target, {
+                    offset: targetId === '#top' ? 0 : -84,
+                    duration: 1.15
+                });
+            });
+        });
+
+        const heroObserver = new IntersectionObserver(([entry]) => {
+            emberGlow.classList.toggle('is-visible', entry.isIntersecting);
+        }, { threshold: 0.15 });
+        heroObserver.observe(hero);
+
+        window.addEventListener('scroll', () => {
+            scrollTopControl?.classList.toggle('visible', window.scrollY > 500);
+        }, { passive: true });
+
+        scrollTopButtons.forEach((button) => {
+            button.addEventListener('click', () => lenis.scrollTo(0, { duration: 1.15 }));
+        });
+        projectControl?.addEventListener('click', () => lenis.scrollTo('#projects', { offset: -84, duration: 1.15 }));
+
+        let rowDelay = 500;
+        typingRows.forEach((typingRow) => {
+            const text = typingRow.dataset.typingRow;
+            const cursor = typingRow.querySelector('.cursor');
+            const typedContent = document.createTextNode('');
+            typingRow.insertBefore(typedContent, cursor);
+            let index = 0;
+            const typeNextCharacter = () => {
+                typedContent.nodeValue = text.slice(0, index);
+                if (index < text.length) {
+                    index += 1;
+                    window.setTimeout(typeNextCharacter, 42);
+                }
+            };
+            window.setTimeout(typeNextCharacter, rowDelay);
+            rowDelay += text.length * 42 + 180;
+        });
+    </script>
+</body>
+</html>
