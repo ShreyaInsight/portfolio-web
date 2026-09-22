@@ -1,9 +1,9 @@
 //Import the THREE.js library
-import * as THREE from "https://cdn.skypack.dev/three@0.129.0/build/three.module.js";
+import * as THREE from "./sources/vendor/three/build/three.module.js";
 // To allow for the camera to move around the scene
-import { OrbitControls } from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/controls/OrbitControls.js";
+import { OrbitControls } from "./sources/vendor/three/examples/jsm/controls/OrbitControls.js";
 // To allow for importing the .gltf file
-import { GLTFLoader } from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/GLTFLoader.js";
+import { GLTFLoader } from "./sources/vendor/three/examples/jsm/loaders/GLTFLoader.js";
 
 const container = document.getElementById("container3D");
 
@@ -21,6 +21,9 @@ let object;
 let isDragging = false;
 let previousPointerX = 0;
 let rotationVelocityY = 0;
+let userRotationY = 0;
+let sceneVisible = true;
+new IntersectionObserver(([entry]) => { sceneVisible = entry.isIntersecting; }, {rootMargin:'200px 0px'}).observe(container);
 
 //OrbitControls allow the camera to move around the scene
 let controls;
@@ -62,7 +65,7 @@ loader.load(
 
 //Instantiate a new renderer and set its size
 const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true }); //Alpha: true allows for the transparent background
-renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.6));
 renderer.setClearColor(0x000000, 0);
 renderer.outputEncoding = THREE.sRGBEncoding;
 renderer.toneMapping = THREE.ACESFilmicToneMapping;
@@ -89,12 +92,16 @@ if (objToRender === "dino") {
 }
 
 //Render the scene
-function animate() {
+const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+function animate(time = 0) {
   requestAnimationFrame(animate);
+  if (!sceneVisible || document.hidden) return;
   //Here we could add some code to update the scene, adding some automatic movement
 
   if (object) {
-    object.rotation.y += rotationVelocityY;
+    if (!reducedMotion && !isDragging) object.rotation.x = -.03 + .025 * Math.sin(time * .00046);
+    userRotationY += rotationVelocityY;
+    object.rotation.y = userRotationY + (reducedMotion ? 0 : .1 * Math.sin(time * .0006));
     rotationVelocityY *= isDragging ? 0.82 : 0.94;
   }
 
@@ -102,8 +109,14 @@ function animate() {
 }
 
 //Add a listener to the window, so we can resize the window and the camera
+let renderWidth = 0;
+let renderHeight = 0;
 function resizeRenderer() {
-  const { width, height } = container.getBoundingClientRect();
+  const width = container.clientWidth;
+  const height = container.clientHeight;
+  if (!width || !height || (width === renderWidth && height === renderHeight)) return;
+  renderWidth = width;
+  renderHeight = height;
   camera.aspect = width / height;
   camera.updateProjectionMatrix();
   renderer.setSize(width, height, false);
@@ -113,7 +126,7 @@ new ResizeObserver(resizeRenderer).observe(container);
 resizeRenderer();
 
 renderer.domElement.addEventListener("pointerdown", (event) => {
-  if (!object) return;
+  if (!object || (event.pointerType === 'mouse' && event.button !== 0)) return;
   event.preventDefault();
   isDragging = true;
   previousPointerX = event.clientX;
@@ -125,7 +138,7 @@ renderer.domElement.addEventListener("pointermove", (event) => {
   if (!isDragging || !object) return;
   const horizontalMovement = event.clientX - previousPointerX;
   rotationVelocityY = horizontalMovement * 0.02;
-  object.rotation.y += rotationVelocityY;
+  userRotationY += rotationVelocityY;
   previousPointerX = event.clientX;
 });
 

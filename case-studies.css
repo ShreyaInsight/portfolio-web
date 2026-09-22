@@ -1,0 +1,712 @@
+/* Live reference CSS, unlayered and scoped to case-study main only. */
+
+
+
+
+
+
+body main.case-study-page .geist_35aa2f0c-module__wso70G__className { font-family: Geist, "Geist Fallback"; font-style: normal; }
+body main.case-study-page .geist_35aa2f0c-module__wso70G__variable { --font-display-src: "Geist", "Geist Fallback"; }
+
+
+
+
+
+
+
+body main.case-study-page .geist_mono_3715ce9e-module__ucpjTW__className { font-family: "Geist Mono", "Geist Mono Fallback"; font-style: normal; }
+body main.case-study-page .geist_mono_3715ce9e-module__ucpjTW__variable { --font-mono-src: "Geist Mono", "Geist Mono Fallback"; }
+
+
+
+
+
+body main.case-study-page .hanken_grotesk_5b3ab99e-module__xfY1XG__className { font-family: "Hanken Grotesk", "Hanken Grotesk Fallback"; font-style: normal; }
+body main.case-study-page .hanken_grotesk_5b3ab99e-module__xfY1XG__variable { --font-body-src: "Hanken Grotesk", "Hanken Grotesk Fallback"; }
+@supports (((-webkit-hyphens:none)) and (not (margin-trim:inline))) or ((-moz-orient:inline) and (not (color:rgb(from red r g b)))) {body main.case-study-page *,body main.case-study-page ::before,body main.case-study-page ::after,body main.case-study-page ::backdrop { --tw-translate-x: 0; --tw-translate-y: 0; --tw-translate-z: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-scale-z: 1; --tw-rotate-x: initial; --tw-rotate-y: initial; --tw-rotate-z: initial; --tw-skew-x: initial; --tw-skew-y: initial; --tw-space-y-reverse: 0; --tw-border-style: solid; --tw-gradient-position: initial; --tw-gradient-from: #0000; --tw-gradient-via: #0000; --tw-gradient-to: #0000; --tw-gradient-stops: initial; --tw-gradient-via-stops: initial; --tw-gradient-from-position: 0%; --tw-gradient-via-position: 50%; --tw-gradient-to-position: 100%; --tw-leading: initial; --tw-font-weight: initial; --tw-tracking: initial; --tw-ordinal: initial; --tw-slashed-zero: initial; --tw-numeric-figure: initial; --tw-numeric-spacing: initial; --tw-numeric-fraction: initial; --tw-shadow: 0 0 #0000; --tw-shadow-color: initial; --tw-shadow-alpha: 100%; --tw-inset-shadow: 0 0 #0000; --tw-inset-shadow-color: initial; --tw-inset-shadow-alpha: 100%; --tw-ring-color: initial; --tw-ring-shadow: 0 0 #0000; --tw-inset-ring-color: initial; --tw-inset-ring-shadow: 0 0 #0000; --tw-ring-inset: initial; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-offset-shadow: 0 0 #0000; --tw-blur: initial; --tw-brightness: initial; --tw-contrast: initial; --tw-grayscale: initial; --tw-hue-rotate: initial; --tw-invert: initial; --tw-opacity: initial; --tw-saturate: initial; --tw-sepia: initial; --tw-drop-shadow: initial; --tw-drop-shadow-color: initial; --tw-drop-shadow-alpha: 100%; --tw-drop-shadow-size: initial; --tw-backdrop-blur: initial; --tw-backdrop-brightness: initial; --tw-backdrop-contrast: initial; --tw-backdrop-grayscale: initial; --tw-backdrop-hue-rotate: initial; --tw-backdrop-invert: initial; --tw-backdrop-opacity: initial; --tw-backdrop-saturate: initial; --tw-backdrop-sepia: initial; --tw-duration: initial; --tw-ease: initial; }}
+body main.case-study-page,body main.case-study-page { --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; --font-mono: var(--font-mono-src); --color-emerald-400: #00d294; --color-black: #000; --color-white: #fff; --spacing: .25rem; --container-sm: 24rem; --container-md: 28rem; --container-lg: 32rem; --container-xl: 36rem; --container-2xl: 42rem; --container-3xl: 48rem; --container-4xl: 56rem; --container-6xl: 72rem; --text-xs: .75rem; --text-xs--line-height: calc(1 / .75); --text-sm: .875rem; --text-sm--line-height: calc(1.25 / .875); --text-lg: 1.125rem; --text-lg--line-height: calc(1.75 / 1.125); --text-xl: 1.25rem; --text-xl--line-height: calc(1.75 / 1.25); --text-2xl: 1.5rem; --text-2xl--line-height: calc(2 / 1.5); --text-3xl: 1.875rem; --text-3xl--line-height: calc(2.25 / 1.875); --text-5xl: 3rem; --text-5xl--line-height: 1; --text-6xl: 3.75rem; --text-6xl--line-height: 1; --font-weight-medium: 500; --font-weight-semibold: 600; --tracking-tight: -.025em; --leading-relaxed: 1.625; --radius-sm: .25rem; --radius-md: .375rem; --radius-lg: .5rem; --radius-xl: .75rem; --animate-ping: ping 1s cubic-bezier(0, 0, .2, 1) infinite; --animate-pulse: pulse 2s cubic-bezier(.4, 0, .6, 1) infinite; --animate-bounce: bounce 1s infinite; --blur-sm: 8px; --blur-md: 12px; --blur-2xl: 40px; --blur-3xl: 64px; --default-transition-duration: .15s; --default-transition-timing-function: cubic-bezier(.4, 0, .2, 1); --default-font-family: var(--font-sans); --default-mono-font-family: var(--font-mono-src); --radius: .625rem; --color-ink: #0b0d0f; --color-ink-2: #0e1113; --color-surface: #121518; --color-line: #262b30; --color-field: #5a646d; --color-bone: #ede8dc; --color-bone-dim: #c7c3ba; --color-muted: #8a929b; --color-ember: #d9663d; --color-ember-bright: #e8794e; --color-dot-inactive: #2c3338; --ease-premium: cubic-bezier(.22, 1, .36, 1); --font-body: var(--font-body-src); }
+@supports (color:lab(0% 0 0)) {body main.case-study-page,body main.case-study-page { --color-emerald-400: lab(75.0771% -60.7313 19.4147); }}
+body main.case-study-page *,body main.case-study-page ::after,body main.case-study-page ::before,body main.case-study-page ::backdrop { box-sizing: border-box; border: 0px solid; margin: 0px; padding: 0px; }
+body main.case-study-page ::file-selector-button { box-sizing: border-box; border: 0px solid; margin: 0px; padding: 0px; }
+body main.case-study-page,body main.case-study-page { text-size-adjust: 100%; tab-size: 4; line-height: 1.5; font-family: var(--default-font-family,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"); font-feature-settings: var(--default-font-feature-settings,normal); font-variation-settings: var(--default-font-variation-settings,normal); -webkit-tap-highlight-color: transparent; }
+body main.case-study-page hr { height: 0px; color: inherit; border-top-width: 1px; }
+body main.case-study-page abbr:where([title]) { text-decoration: underline dotted; }
+body main.case-study-page h1,body main.case-study-page h2,body main.case-study-page h3,body main.case-study-page h4,body main.case-study-page h5,body main.case-study-page h6 { font-size: inherit; font-weight: inherit; }
+body main.case-study-page a { color: inherit; text-decoration: inherit; }
+body main.case-study-page b,body main.case-study-page strong { font-weight: bolder; }
+body main.case-study-page code,body main.case-study-page kbd,body main.case-study-page samp,body main.case-study-page pre { font-family: var(--default-mono-font-family,ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace); font-feature-settings: var(--default-mono-font-feature-settings,normal); font-variation-settings: var(--default-mono-font-variation-settings,normal); font-size: 1em; }
+body main.case-study-page small { font-size: 80%; }
+body main.case-study-page sub,body main.case-study-page sup { vertical-align: baseline; font-size: 75%; line-height: 0; position: relative; }
+body main.case-study-page sub { bottom: -0.25em; }
+body main.case-study-page sup { top: -0.5em; }
+body main.case-study-page table { text-indent: 0px; border-color: inherit; border-collapse: collapse; }
+body main.case-study-page progress { vertical-align: baseline; }
+body main.case-study-page summary { display: list-item; }
+body main.case-study-page ol,body main.case-study-page ul,body main.case-study-page menu { list-style: none; }
+body main.case-study-page img,body main.case-study-page svg,body main.case-study-page video,body main.case-study-page canvas,body main.case-study-page audio,body main.case-study-page iframe,body main.case-study-page embed,body main.case-study-page object { vertical-align: middle; display: block; }
+body main.case-study-page img,body main.case-study-page video { max-width: 100%; height: auto; }
+body main.case-study-page button,body main.case-study-page input,body main.case-study-page select,body main.case-study-page optgroup,body main.case-study-page textarea { font: inherit; letter-spacing: inherit; color: inherit; opacity: 1; background-color: rgba(0, 0, 0, 0); border-radius: 0px; }
+body main.case-study-page ::file-selector-button { font: inherit; letter-spacing: inherit; color: inherit; opacity: 1; background-color: rgba(0, 0, 0, 0); border-radius: 0px; }
+body main.case-study-page :where(select:is([multiple], [size])) optgroup { font-weight: bolder; }
+body main.case-study-page :where(select:is([multiple], [size])) optgroup option { padding-inline-start: 20px; }
+body main.case-study-page ::file-selector-button { margin-inline-end: 4px; }
+body main.case-study-page ::placeholder { opacity: 1; }
+@supports (not ((-webkit-appearance:-apple-pay-button))) or (contain-intrinsic-size:1px) {body main.case-study-page ::placeholder { color: currentcolor; }
+@supports (color:color-mix(in lab, red, red)) {body main.case-study-page ::placeholder { color: color-mix(currentcolor, transparent); }}}
+body main.case-study-page textarea { resize: vertical; }
+body main.case-study-page ::-webkit-search-decoration { appearance: none; }
+body main.case-study-page ::-webkit-date-and-time-value { min-height: 1lh; text-align: inherit; }
+body main.case-study-page ::-webkit-datetime-edit { display: inline-flex; }
+body main.case-study-page ::-webkit-datetime-edit-fields-wrapper { padding: 0px; }
+body main.case-study-page ::-webkit-datetime-edit { padding-block: 0px; }
+body main.case-study-page ::-webkit-datetime-edit-year-field { padding-block: 0px; }
+body main.case-study-page ::-webkit-datetime-edit-month-field { padding-block: 0px; }
+body main.case-study-page ::-webkit-datetime-edit-day-field { padding-block: 0px; }
+body main.case-study-page ::-webkit-datetime-edit-hour-field { padding-block: 0px; }
+body main.case-study-page ::-webkit-datetime-edit-minute-field { padding-block: 0px; }
+body main.case-study-page ::-webkit-datetime-edit-second-field { padding-block: 0px; }
+body main.case-study-page ::-webkit-datetime-edit-millisecond-field { padding-block: 0px; }
+body main.case-study-page ::-webkit-datetime-edit-meridiem-field { padding-block: 0px; }
+body main.case-study-page ::-webkit-calendar-picker-indicator { line-height: 1; }
+body main.case-study-page button,body main.case-study-page input:where([type="button"], [type="reset"], [type="submit"]) { appearance: button; }
+body main.case-study-page ::file-selector-button { appearance: button; }
+body main.case-study-page ::-webkit-inner-spin-button { height: auto; }
+body main.case-study-page ::-webkit-outer-spin-button { height: auto; }
+body main.case-study-page [hidden]:where(:not([hidden="until-found"])) { display: none !important; }
+
+body main.case-study-page .pointer-events-none { pointer-events: none; }
+body main.case-study-page .invisible { visibility: hidden; }
+body main.case-study-page .visible { visibility: visible; }
+body main.case-study-page .sr-only { clip-path: inset(50%); white-space: nowrap; border-width: 0px; width: 1px; height: 1px; margin: -1px; padding: 0px; position: absolute; overflow: hidden; }
+body main.case-study-page .absolute { position: absolute; }
+body main.case-study-page .fixed { position: fixed; }
+body main.case-study-page .relative { position: relative; }
+body main.case-study-page .static { position: static; }
+body main.case-study-page .-inset-2\.5 { inset: calc(var(--spacing) * -2.5); }
+body main.case-study-page .-inset-8 { inset: calc(var(--spacing) * -8); }
+body main.case-study-page .inset-0 { inset: 0px; }
+body main.case-study-page .inset-x-0 { inset-inline: 0px; }
+body main.case-study-page .top-0 { top: 0px; }
+body main.case-study-page .top-0\.5 { top: calc(var(--spacing) * .5); }
+body main.case-study-page .top-1\/2 { top: 50%; }
+body main.case-study-page .right-0 { right: 0px; }
+body main.case-study-page .-bottom-0\.5 { bottom: calc(var(--spacing) * -.5); }
+body main.case-study-page .bottom-0\.5 { bottom: calc(var(--spacing) * .5); }
+body main.case-study-page .bottom-1\.5 { bottom: calc(var(--spacing) * 1.5); }
+body main.case-study-page .bottom-6 { bottom: calc(var(--spacing) * 6); }
+body main.case-study-page .left-0 { left: 0px; }
+body main.case-study-page .left-1\/2 { left: 50%; }
+body main.case-study-page .isolate { isolation: isolate; }
+body main.case-study-page .-z-10 { z-index: calc(-10); }
+body main.case-study-page .z-30 { z-index: 30; }
+body main.case-study-page .z-40 { z-index: 40; }
+body main.case-study-page .z-\[60\] { z-index: 60; }
+body main.case-study-page .order-first { order: -9999; }
+body main.case-study-page .mx-auto { margin-inline: auto; }
+body main.case-study-page .mt-0\.5 { margin-top: calc(var(--spacing) * .5); }
+body main.case-study-page .mt-1 { margin-top: var(--spacing); }
+body main.case-study-page .mt-1\.5 { margin-top: calc(var(--spacing) * 1.5); }
+body main.case-study-page .mt-2 { margin-top: calc(var(--spacing) * 2); }
+body main.case-study-page .mt-2\.5 { margin-top: calc(var(--spacing) * 2.5); }
+body main.case-study-page .mt-3 { margin-top: calc(var(--spacing) * 3); }
+body main.case-study-page .mt-4 { margin-top: calc(var(--spacing) * 4); }
+body main.case-study-page .mt-5 { margin-top: calc(var(--spacing) * 5); }
+body main.case-study-page .mt-6 { margin-top: calc(var(--spacing) * 6); }
+body main.case-study-page .mt-7 { margin-top: calc(var(--spacing) * 7); }
+body main.case-study-page .mt-8 { margin-top: calc(var(--spacing) * 8); }
+body main.case-study-page .mt-9 { margin-top: calc(var(--spacing) * 9); }
+body main.case-study-page .mt-10 { margin-top: calc(var(--spacing) * 10); }
+body main.case-study-page .mt-12 { margin-top: calc(var(--spacing) * 12); }
+body main.case-study-page .mt-14 { margin-top: calc(var(--spacing) * 14); }
+body main.case-study-page .mt-16 { margin-top: calc(var(--spacing) * 16); }
+body main.case-study-page .mt-20 { margin-top: calc(var(--spacing) * 20); }
+body main.case-study-page .mt-24 { margin-top: calc(var(--spacing) * 24); }
+body main.case-study-page .mt-28 { margin-top: calc(var(--spacing) * 28); }
+body main.case-study-page .mt-32 { margin-top: calc(var(--spacing) * 32); }
+body main.case-study-page .-mr-2 { margin-right: calc(var(--spacing) * -2); }
+body main.case-study-page .mb-3 { margin-bottom: calc(var(--spacing) * 3); }
+body main.case-study-page .-ml-0\.5 { margin-left: calc(var(--spacing) * -.5); }
+body main.case-study-page .ml-2 { margin-left: calc(var(--spacing) * 2); }
+body main.case-study-page .ml-3 { margin-left: calc(var(--spacing) * 3); }
+body main.case-study-page .ml-auto { margin-left: auto; }
+body main.case-study-page .ml-px { margin-left: 1px; }
+body main.case-study-page .block { display: block; }
+body main.case-study-page .contents { display: contents; }
+body main.case-study-page .flex { display: flex; }
+body main.case-study-page .grid { display: grid; }
+body main.case-study-page .hidden { display: none; }
+body main.case-study-page .inline { display: inline; }
+body main.case-study-page .inline-block { display: inline-block; }
+body main.case-study-page .inline-flex { display: inline-flex; }
+body main.case-study-page .table { display: table; }
+body main.case-study-page .aspect-\[4\/5\] { aspect-ratio: 4 / 5; }
+body main.case-study-page .aspect-\[16\/10\] { aspect-ratio: 16 / 10; }
+body main.case-study-page .h-0\.5 { height: calc(var(--spacing) * .5); }
+body main.case-study-page .h-1\.5 { height: calc(var(--spacing) * 1.5); }
+body main.case-study-page .h-2 { height: calc(var(--spacing) * 2); }
+body main.case-study-page .h-2\.5 { height: calc(var(--spacing) * 2.5); }
+body main.case-study-page .h-3 { height: calc(var(--spacing) * 3); }
+body main.case-study-page .h-3\.5 { height: calc(var(--spacing) * 3.5); }
+body main.case-study-page .h-4 { height: calc(var(--spacing) * 4); }
+body main.case-study-page .h-4\.5 { height: calc(var(--spacing) * 4.5); }
+body main.case-study-page .h-5 { height: calc(var(--spacing) * 5); }
+body main.case-study-page .h-9 { height: calc(var(--spacing) * 9); }
+body main.case-study-page .h-11 { height: calc(var(--spacing) * 11); }
+body main.case-study-page .h-16 { height: calc(var(--spacing) * 16); }
+body main.case-study-page .h-\[1\.35rem\] { height: 1.35rem; }
+body main.case-study-page .h-\[1\.45em\] { height: 1.45em; }
+body main.case-study-page .h-\[7px\] { height: 7px; }
+body main.case-study-page .h-\[40vh\] { height: 40vh; }
+body main.case-study-page .h-\[42rem\] { height: 42rem; }
+body main.case-study-page .h-auto { height: auto; }
+body main.case-study-page .h-full { height: 100%; }
+body main.case-study-page .h-px { height: 1px; }
+body main.case-study-page .h-screen { height: 100vh; }
+body main.case-study-page .max-h-\[50vh\] { max-height: 50vh; }
+body main.case-study-page .min-h-\[300px\] { min-height: 300px; }
+body main.case-study-page .min-h-dvh { min-height: 100dvh; }
+body main.case-study-page .w-1\.5 { width: calc(var(--spacing) * 1.5); }
+body main.case-study-page .w-2 { width: calc(var(--spacing) * 2); }
+body main.case-study-page .w-2\.5 { width: calc(var(--spacing) * 2.5); }
+body main.case-study-page .w-3 { width: calc(var(--spacing) * 3); }
+body main.case-study-page .w-3\.5 { width: calc(var(--spacing) * 3.5); }
+body main.case-study-page .w-4 { width: calc(var(--spacing) * 4); }
+body main.case-study-page .w-5 { width: calc(var(--spacing) * 5); }
+body main.case-study-page .w-6 { width: calc(var(--spacing) * 6); }
+body main.case-study-page .w-7 { width: calc(var(--spacing) * 7); }
+body main.case-study-page .w-11 { width: calc(var(--spacing) * 11); }
+body main.case-study-page .w-36 { width: calc(var(--spacing) * 36); }
+body main.case-study-page .w-40 { width: calc(var(--spacing) * 40); }
+body main.case-study-page .w-52 { width: calc(var(--spacing) * 52); }
+body main.case-study-page .w-\[0\.5ch\] { width: 0.5ch; }
+body main.case-study-page .w-\[7px\] { width: 7px; }
+body main.case-study-page .w-\[42rem\] { width: 42rem; }
+body main.case-study-page .w-auto { width: auto; }
+body main.case-study-page .w-full { width: 100%; }
+body main.case-study-page .w-screen { width: 100vw; }
+body main.case-study-page .max-w-2xl { max-width: var(--container-2xl); }
+body main.case-study-page .max-w-3xl { max-width: var(--container-3xl); }
+body main.case-study-page .max-w-4xl { max-width: var(--container-4xl); }
+body main.case-study-page .max-w-6xl { max-width: var(--container-6xl); }
+body main.case-study-page .max-w-\[320px\] { max-width: 320px; }
+body main.case-study-page .max-w-\[840px\] { max-width: 840px; }
+body main.case-study-page .max-w-\[980px\] { max-width: 980px; }
+body main.case-study-page .max-w-lg { max-width: var(--container-lg); }
+body main.case-study-page .max-w-md { max-width: var(--container-md); }
+body main.case-study-page .max-w-sm { max-width: var(--container-sm); }
+body main.case-study-page .max-w-xl { max-width: var(--container-xl); }
+body main.case-study-page .shrink-0 { flex-shrink: 0; }
+body main.case-study-page .origin-left { transform-origin: 0px center; }
+body main.case-study-page .-translate-x-1\/2 { --tw-translate-x: calc(calc(1 / 2 * 100%) * -1); translate: var(--tw-translate-x) var(--tw-translate-y); }
+body main.case-study-page .translate-x-1\/3 { --tw-translate-x: calc(1 / 3 * 100%); translate: var(--tw-translate-x) var(--tw-translate-y); }
+body main.case-study-page .-translate-y-1\/2 { --tw-translate-y: calc(calc(1 / 2 * 100%) * -1); translate: var(--tw-translate-x) var(--tw-translate-y); }
+body main.case-study-page .translate-y-1\/2 { --tw-translate-y: calc(1 / 2 * 100%); translate: var(--tw-translate-x) var(--tw-translate-y); }
+body main.case-study-page .scale-x-0 { --tw-scale-x: 0%; scale: var(--tw-scale-x) var(--tw-scale-y); }
+body main.case-study-page .scale-x-100 { --tw-scale-x: 100%; scale: var(--tw-scale-x) var(--tw-scale-y); }
+body main.case-study-page .-rotate-45 { rotate: -45deg; }
+body main.case-study-page .rotate-45 { rotate: 45deg; }
+body main.case-study-page .transform { transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,); }
+body main.case-study-page .animate-bounce { animation: var(--animate-bounce); }
+body main.case-study-page .animate-ping { animation: var(--animate-ping); }
+body main.case-study-page .animate-pulse { animation: var(--animate-pulse); }
+body main.case-study-page .cursor-default { cursor: default; }
+body main.case-study-page .resize-none { resize: none; }
+body main.case-study-page .scroll-mt-24 { scroll-margin-top: calc(var(--spacing) * 24); }
+body main.case-study-page .grid-rows-\[0fr\] { grid-template-rows: 0fr; }
+body main.case-study-page .grid-rows-\[1fr\] { grid-template-rows: 1fr; }
+body main.case-study-page .flex-col { flex-direction: column; }
+body main.case-study-page .flex-wrap { flex-wrap: wrap; }
+body main.case-study-page .items-baseline { align-items: baseline; }
+body main.case-study-page .items-center { align-items: center; }
+body main.case-study-page .items-end { align-items: flex-end; }
+body main.case-study-page .items-start { align-items: flex-start; }
+body main.case-study-page .justify-between { justify-content: space-between; }
+body main.case-study-page .justify-center { justify-content: center; }
+body main.case-study-page .gap-1 { gap: var(--spacing); }
+body main.case-study-page .gap-1\.5 { gap: calc(var(--spacing) * 1.5); }
+body main.case-study-page .gap-2 { gap: calc(var(--spacing) * 2); }
+body main.case-study-page .gap-2\.5 { gap: calc(var(--spacing) * 2.5); }
+body main.case-study-page .gap-3 { gap: calc(var(--spacing) * 3); }
+body main.case-study-page .gap-4 { gap: calc(var(--spacing) * 4); }
+body main.case-study-page .gap-5 { gap: calc(var(--spacing) * 5); }
+body main.case-study-page .gap-6 { gap: calc(var(--spacing) * 6); }
+body main.case-study-page .gap-8 { gap: calc(var(--spacing) * 8); }
+body main.case-study-page .gap-10 { gap: calc(var(--spacing) * 10); }
+body main.case-study-page .gap-12 { gap: calc(var(--spacing) * 12); }
+body main.case-study-page .gap-14 { gap: calc(var(--spacing) * 14); }
+body main.case-study-page :where(.space-y-2 > :not(:last-child)) { --tw-space-y-reverse: 0; margin-block-start: calc(calc(var(--spacing) * 2) * var(--tw-space-y-reverse)); margin-block-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-y-reverse))); }
+body main.case-study-page :where(.space-y-2\.5 > :not(:last-child)) { --tw-space-y-reverse: 0; margin-block-start: calc(calc(var(--spacing) * 2.5) * var(--tw-space-y-reverse)); margin-block-end: calc(calc(var(--spacing) * 2.5) * calc(1 - var(--tw-space-y-reverse))); }
+body main.case-study-page :where(.space-y-3 > :not(:last-child)) { --tw-space-y-reverse: 0; margin-block-start: calc(calc(var(--spacing) * 3) * var(--tw-space-y-reverse)); margin-block-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-y-reverse))); }
+body main.case-study-page :where(.space-y-4 > :not(:last-child)) { --tw-space-y-reverse: 0; margin-block-start: calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse)); margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse))); }
+body main.case-study-page :where(.space-y-5 > :not(:last-child)) { --tw-space-y-reverse: 0; margin-block-start: calc(calc(var(--spacing) * 5) * var(--tw-space-y-reverse)); margin-block-end: calc(calc(var(--spacing) * 5) * calc(1 - var(--tw-space-y-reverse))); }
+body main.case-study-page :where(.space-y-28 > :not(:last-child)) { --tw-space-y-reverse: 0; margin-block-start: calc(calc(var(--spacing) * 28) * var(--tw-space-y-reverse)); margin-block-end: calc(calc(var(--spacing) * 28) * calc(1 - var(--tw-space-y-reverse))); }
+body main.case-study-page .gap-x-5 { column-gap: calc(var(--spacing) * 5); }
+body main.case-study-page .gap-x-6 { column-gap: calc(var(--spacing) * 6); }
+body main.case-study-page .gap-x-7 { column-gap: calc(var(--spacing) * 7); }
+body main.case-study-page .gap-x-8 { column-gap: calc(var(--spacing) * 8); }
+body main.case-study-page .gap-x-10 { column-gap: calc(var(--spacing) * 10); }
+body main.case-study-page .gap-y-2 { row-gap: calc(var(--spacing) * 2); }
+body main.case-study-page .gap-y-3 { row-gap: calc(var(--spacing) * 3); }
+body main.case-study-page .gap-y-4 { row-gap: calc(var(--spacing) * 4); }
+body main.case-study-page .gap-y-10 { row-gap: calc(var(--spacing) * 10); }
+body main.case-study-page .gap-y-16 { row-gap: calc(var(--spacing) * 16); }
+body main.case-study-page .self-center { align-self: center; }
+body main.case-study-page .truncate { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+body main.case-study-page .overflow-hidden { overflow: hidden; }
+body main.case-study-page .overflow-x-auto { overflow-x: auto; }
+body main.case-study-page .overflow-y-auto { overflow-y: auto; }
+body main.case-study-page .rounded { border-radius: var(--radius); }
+body main.case-study-page .rounded-\[1\.5rem\] { border-radius: 1.5rem; }
+body main.case-study-page .rounded-\[2\.5rem\] { border-radius: 2.5rem; }
+body main.case-study-page .rounded-\[var\(--radius\)\] { border-radius: var(--radius); }
+body main.case-study-page .rounded-full { border-radius: 3.40282e+38px; }
+body main.case-study-page .rounded-lg { border-radius: var(--radius-lg); }
+body main.case-study-page .rounded-md { border-radius: var(--radius-md); }
+body main.case-study-page .rounded-sm { border-radius: var(--radius-sm); }
+body main.case-study-page .rounded-xl { border-radius: var(--radius-xl); }
+body main.case-study-page .border { border-style: var(--tw-border-style); border-width: 1px; }
+body main.case-study-page .border-t { border-top-style: var(--tw-border-style); border-top-width: 1px; }
+body main.case-study-page .border-b { border-bottom-style: var(--tw-border-style); border-bottom-width: 1px; }
+body main.case-study-page .border-black\/10 { border-color: rgba(0, 0, 0, 0.1); }
+@supports (color:color-mix(in lab, red, red)) {body main.case-study-page .border-black\/10 { border-color: color-mix(in oklab, var(--color-black) 10%, transparent); }}
+body main.case-study-page .border-ember\/40 { border-color: rgba(217, 102, 61, 0.4); }
+@supports (color:color-mix(in lab, red, red)) {body main.case-study-page .border-ember\/40 { border-color: color-mix(in oklab, var(--color-ember) 40%, transparent); }}
+body main.case-study-page .border-ember\/50 { border-color: rgba(217, 102, 61, 0.5); }
+@supports (color:color-mix(in lab, red, red)) {body main.case-study-page .border-ember\/50 { border-color: color-mix(in oklab, var(--color-ember) 50%, transparent); }}
+body main.case-study-page .border-field { border-color: var(--color-field); }
+body main.case-study-page .border-line { border-color: var(--color-line); }
+body main.case-study-page .border-line\/60 { border-color: rgba(38, 43, 48, 0.6); }
+@supports (color:color-mix(in lab, red, red)) {body main.case-study-page .border-line\/60 { border-color: color-mix(in oklab, var(--color-line) 60%, transparent); }}
+body main.case-study-page .border-transparent { border-color: rgba(0, 0, 0, 0); }
+body main.case-study-page .bg-\[\#262b30\] { background-color: rgb(38, 43, 48); }
+body main.case-study-page .bg-current { background-color: currentcolor; }
+body main.case-study-page .bg-dot-inactive { background-color: var(--color-dot-inactive); }
+body main.case-study-page .bg-ember { background-color: var(--color-ember); }
+body main.case-study-page .bg-ember\/10 { background-color: rgba(217, 102, 61, 0.1); }
+@supports (color:color-mix(in lab, red, red)) {body main.case-study-page .bg-ember\/10 { background-color: color-mix(in oklab, var(--color-ember) 10%, transparent); }}
+body main.case-study-page .bg-ember\/12 { background-color: rgba(217, 102, 61, 0.12); }
+@supports (color:color-mix(in lab, red, red)) {body main.case-study-page .bg-ember\/12 { background-color: color-mix(in oklab, var(--color-ember) 12%, transparent); }}
+body main.case-study-page .bg-ember\/15 { background-color: rgba(217, 102, 61, 0.15); }
+@supports (color:color-mix(in lab, red, red)) {body main.case-study-page .bg-ember\/15 { background-color: color-mix(in oklab, var(--color-ember) 15%, transparent); }}
+body main.case-study-page .bg-ember\/60 { background-color: rgba(217, 102, 61, 0.6); }
+@supports (color:color-mix(in lab, red, red)) {body main.case-study-page .bg-ember\/60 { background-color: color-mix(in oklab, var(--color-ember) 60%, transparent); }}
+body main.case-study-page .bg-ember\/70 { background-color: rgba(217, 102, 61, 0.7); }
+@supports (color:color-mix(in lab, red, red)) {body main.case-study-page .bg-ember\/70 { background-color: color-mix(in oklab, var(--color-ember) 70%, transparent); }}
+body main.case-study-page .bg-emerald-400 { background-color: var(--color-emerald-400); }
+body main.case-study-page .bg-emerald-400\/70 { background-color: rgba(0, 210, 148, 0.7); }
+@supports (color:color-mix(in lab, red, red)) {body main.case-study-page .bg-emerald-400\/70 { background-color: color-mix(in oklab, var(--color-emerald-400) 70%, transparent); }}
+body main.case-study-page .bg-ink { background-color: var(--color-ink); }
+body main.case-study-page .bg-ink-2 { background-color: var(--color-ink-2); }
+body main.case-study-page .bg-ink\/40 { background-color: rgba(11, 13, 15, 0.4); }
+@supports (color:color-mix(in lab, red, red)) {body main.case-study-page .bg-ink\/40 { background-color: color-mix(in oklab, var(--color-ink) 40%, transparent); }}
+body main.case-study-page .bg-ink\/50 { background-color: rgba(11, 13, 15, 0.5); }
+@supports (color:color-mix(in lab, red, red)) {body main.case-study-page .bg-ink\/50 { background-color: color-mix(in oklab, var(--color-ink) 50%, transparent); }}
+body main.case-study-page .bg-ink\/70 { background-color: rgba(11, 13, 15, 0.7); }
+@supports (color:color-mix(in lab, red, red)) {body main.case-study-page .bg-ink\/70 { background-color: color-mix(in oklab, var(--color-ink) 70%, transparent); }}
+body main.case-study-page .bg-ink\/80 { background-color: rgba(11, 13, 15, 0.8); }
+@supports (color:color-mix(in lab, red, red)) {body main.case-study-page .bg-ink\/80 { background-color: color-mix(in oklab, var(--color-ink) 80%, transparent); }}
+body main.case-study-page .bg-ink\/95 { background-color: rgba(11, 13, 15, 0.95); }
+@supports (color:color-mix(in lab, red, red)) {body main.case-study-page .bg-ink\/95 { background-color: color-mix(in oklab, var(--color-ink) 95%, transparent); }}
+body main.case-study-page .bg-line { background-color: var(--color-line); }
+body main.case-study-page .bg-surface { background-color: var(--color-surface); }
+body main.case-study-page .bg-surface\/40 { background-color: rgba(18, 21, 24, 0.4); }
+@supports (color:color-mix(in lab, red, red)) {body main.case-study-page .bg-surface\/40 { background-color: color-mix(in oklab, var(--color-surface) 40%, transparent); }}
+body main.case-study-page .bg-surface\/60 { background-color: rgba(18, 21, 24, 0.6); }
+@supports (color:color-mix(in lab, red, red)) {body main.case-study-page .bg-surface\/60 { background-color: color-mix(in oklab, var(--color-surface) 60%, transparent); }}
+body main.case-study-page .bg-transparent { background-color: rgba(0, 0, 0, 0); }
+body main.case-study-page .bg-white { background-color: var(--color-white); }
+body main.case-study-page .bg-gradient-to-tr { --tw-gradient-position: to top right in oklab; background-image: linear-gradient(var(--tw-gradient-stops)); }
+body main.case-study-page .from-ember\/20 { --tw-gradient-from: #d9663d33; }
+@supports (color:color-mix(in lab, red, red)) {body main.case-study-page .from-ember\/20 { --tw-gradient-from: color-mix(in oklab, var(--color-ember) 20%, transparent); }}
+body main.case-study-page .from-ember\/20 { --tw-gradient-stops: var(--tw-gradient-via-stops,var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position)); }
+body main.case-study-page .from-ember\/45 { --tw-gradient-from: #d9663d73; }
+@supports (color:color-mix(in lab, red, red)) {body main.case-study-page .from-ember\/45 { --tw-gradient-from: color-mix(in oklab, var(--color-ember) 45%, transparent); }}
+body main.case-study-page .from-ember\/45 { --tw-gradient-stops: var(--tw-gradient-via-stops,var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position)); }
+body main.case-study-page .via-ember\/5 { --tw-gradient-via: #d9663d0d; }
+@supports (color:color-mix(in lab, red, red)) {body main.case-study-page .via-ember\/5 { --tw-gradient-via: color-mix(in oklab, var(--color-ember) 5%, transparent); }}
+body main.case-study-page .via-ember\/5 { --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position); --tw-gradient-stops: var(--tw-gradient-via-stops); }
+body main.case-study-page .via-ember\/20 { --tw-gradient-via: #d9663d33; }
+@supports (color:color-mix(in lab, red, red)) {body main.case-study-page .via-ember\/20 { --tw-gradient-via: color-mix(in oklab, var(--color-ember) 20%, transparent); }}
+body main.case-study-page .via-ember\/20 { --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position); --tw-gradient-stops: var(--tw-gradient-via-stops); }
+body main.case-study-page .to-ember\/5 { --tw-gradient-to: #d9663d0d; }
+@supports (color:color-mix(in lab, red, red)) {body main.case-study-page .to-ember\/5 { --tw-gradient-to: color-mix(in oklab, var(--color-ember) 5%, transparent); }}
+body main.case-study-page .to-ember\/5 { --tw-gradient-stops: var(--tw-gradient-via-stops,var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position)); }
+body main.case-study-page .to-transparent { --tw-gradient-to: transparent; --tw-gradient-stops: var(--tw-gradient-via-stops,var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position)); }
+body main.case-study-page .object-contain { object-fit: contain; }
+body main.case-study-page .object-cover { object-fit: cover; }
+body main.case-study-page .object-center { object-position: center center; }
+body main.case-study-page .object-top { object-position: center top; }
+body main.case-study-page .p-2 { padding: calc(var(--spacing) * 2); }
+body main.case-study-page .p-4 { padding: calc(var(--spacing) * 4); }
+body main.case-study-page .p-5 { padding: calc(var(--spacing) * 5); }
+body main.case-study-page .p-6 { padding: calc(var(--spacing) * 6); }
+body main.case-study-page .px-1 { padding-inline: var(--spacing); }
+body main.case-study-page .px-1\.5 { padding-inline: calc(var(--spacing) * 1.5); }
+body main.case-study-page .px-2\.5 { padding-inline: calc(var(--spacing) * 2.5); }
+body main.case-study-page .px-3 { padding-inline: calc(var(--spacing) * 3); }
+body main.case-study-page .px-3\.5 { padding-inline: calc(var(--spacing) * 3.5); }
+body main.case-study-page .px-4 { padding-inline: calc(var(--spacing) * 4); }
+body main.case-study-page .px-5 { padding-inline: calc(var(--spacing) * 5); }
+body main.case-study-page .px-6 { padding-inline: calc(var(--spacing) * 6); }
+body main.case-study-page .py-0\.5 { padding-block: calc(var(--spacing) * .5); }
+body main.case-study-page .py-1 { padding-block: var(--spacing); }
+body main.case-study-page .py-1\.5 { padding-block: calc(var(--spacing) * 1.5); }
+body main.case-study-page .py-2 { padding-block: calc(var(--spacing) * 2); }
+body main.case-study-page .py-2\.5 { padding-block: calc(var(--spacing) * 2.5); }
+body main.case-study-page .py-3 { padding-block: calc(var(--spacing) * 3); }
+body main.case-study-page .py-3\.5 { padding-block: calc(var(--spacing) * 3.5); }
+body main.case-study-page .py-6 { padding-block: calc(var(--spacing) * 6); }
+body main.case-study-page .py-7 { padding-block: calc(var(--spacing) * 7); }
+body main.case-study-page .py-9 { padding-block: calc(var(--spacing) * 9); }
+body main.case-study-page .py-12 { padding-block: calc(var(--spacing) * 12); }
+body main.case-study-page .py-24 { padding-block: calc(var(--spacing) * 24); }
+body main.case-study-page .py-28 { padding-block: calc(var(--spacing) * 28); }
+body main.case-study-page .pt-3 { padding-top: calc(var(--spacing) * 3); }
+body main.case-study-page .pt-6 { padding-top: calc(var(--spacing) * 6); }
+body main.case-study-page .pt-10 { padding-top: calc(var(--spacing) * 10); }
+body main.case-study-page .pt-14 { padding-top: calc(var(--spacing) * 14); }
+body main.case-study-page .pt-16 { padding-top: calc(var(--spacing) * 16); }
+body main.case-study-page .pt-28 { padding-top: calc(var(--spacing) * 28); }
+body main.case-study-page .pt-32 { padding-top: calc(var(--spacing) * 32); }
+body main.case-study-page .pt-\[16vh\] { padding-top: 16vh; }
+body main.case-study-page .pr-2 { padding-right: calc(var(--spacing) * 2); }
+body main.case-study-page .pb-1 { padding-bottom: var(--spacing); }
+body main.case-study-page .pb-16 { padding-bottom: calc(var(--spacing) * 16); }
+body main.case-study-page .pb-24 { padding-bottom: calc(var(--spacing) * 24); }
+body main.case-study-page .pb-28 { padding-bottom: calc(var(--spacing) * 28); }
+body main.case-study-page .pl-2\.5 { padding-left: calc(var(--spacing) * 2.5); }
+body main.case-study-page .text-center { text-align: center; }
+body main.case-study-page .text-left { text-align: left; }
+body main.case-study-page .text-right { text-align: right; }
+body main.case-study-page .align-middle { vertical-align: middle; }
+body main.case-study-page .font-body { font-family: var(--font-body-src); }
+body main.case-study-page .font-display { font-family: var(--font-display-src); }
+body main.case-study-page .font-mono { font-family: var(--font-mono-src); }
+body main.case-study-page .text-2xl { font-size: var(--text-2xl); line-height: var(--tw-leading,var(--text-2xl--line-height)); }
+body main.case-study-page .text-lg { font-size: var(--text-lg); line-height: var(--tw-leading,var(--text-lg--line-height)); }
+body main.case-study-page .text-sm { font-size: var(--text-sm); line-height: var(--tw-leading,var(--text-sm--line-height)); }
+body main.case-study-page .text-xl { font-size: var(--text-xl); line-height: var(--tw-leading,var(--text-xl--line-height)); }
+body main.case-study-page .text-xs { font-size: var(--text-xs); line-height: var(--tw-leading,var(--text-xs--line-height)); }
+body main.case-study-page .text-\[0\.6rem\] { font-size: 0.6rem; }
+body main.case-study-page .text-\[0\.7rem\] { font-size: 0.7rem; }
+body main.case-study-page .text-\[0\.8rem\] { font-size: 0.8rem; }
+body main.case-study-page .text-\[0\.62rem\] { font-size: 0.62rem; }
+body main.case-study-page .text-\[0\.65rem\] { font-size: 0.65rem; }
+body main.case-study-page .text-\[0\.72rem\] { font-size: 0.72rem; }
+body main.case-study-page .text-\[0\.76rem\] { font-size: 0.76rem; }
+body main.case-study-page .text-\[0\.78rem\] { font-size: 0.78rem; }
+body main.case-study-page .text-\[0\.82em\] { font-size: 0.82em; }
+body main.case-study-page .text-\[0\.95rem\] { font-size: 0.95rem; }
+body main.case-study-page .text-\[0\.97rem\] { font-size: 0.97rem; }
+body main.case-study-page .text-\[1\.02rem\] { font-size: 1.02rem; }
+body main.case-study-page .text-\[1\.05rem\] { font-size: 1.05rem; }
+body main.case-study-page .text-\[2\.4rem\] { font-size: 2.4rem; }
+body main.case-study-page .text-\[2\.8rem\] { font-size: 2.8rem; }
+body main.case-study-page .text-\[2rem\] { font-size: 2rem; }
+body main.case-study-page .text-\[3\.1rem\] { font-size: 3.1rem; }
+body main.case-study-page .text-\[3rem\] { font-size: 3rem; }
+body main.case-study-page .leading-\[0\.95\] { --tw-leading: .95; line-height: 0.95; }
+body main.case-study-page .leading-\[0\.98\] { --tw-leading: .98; line-height: 0.98; }
+body main.case-study-page .leading-\[1\.0\] { --tw-leading: 1; line-height: 1; }
+body main.case-study-page .leading-\[1\.02\] { --tw-leading: 1.02; line-height: 1.02; }
+body main.case-study-page .leading-\[1\.03\] { --tw-leading: 1.03; line-height: 1.03; }
+body main.case-study-page .leading-\[1\.04\] { --tw-leading: 1.04; line-height: 1.04; }
+body main.case-study-page .leading-\[1\.08\] { --tw-leading: 1.08; line-height: 1.08; }
+body main.case-study-page .leading-\[1\.45em\] { --tw-leading: 1.45em; line-height: 1.45em; }
+body main.case-study-page .leading-none { --tw-leading: 1; line-height: 1; }
+body main.case-study-page .leading-relaxed { --tw-leading: var(--leading-relaxed); line-height: var(--leading-relaxed); }
+body main.case-study-page .font-medium { --tw-font-weight: var(--font-weight-medium); font-weight: var(--font-weight-medium); }
+body main.case-study-page .font-semibold { --tw-font-weight: var(--font-weight-semibold); font-weight: var(--font-weight-semibold); }
+body main.case-study-page .tracking-\[-0\.02em\] { --tw-tracking: -.02em; letter-spacing: -0.02em; }
+body main.case-study-page .tracking-\[-0\.03em\] { --tw-tracking: -.03em; letter-spacing: -0.03em; }
+body main.case-study-page .tracking-\[-0\.025em\] { --tw-tracking: -.025em; letter-spacing: -0.025em; }
+body main.case-study-page .tracking-\[-0\.035em\] { --tw-tracking: -.035em; letter-spacing: -0.035em; }
+body main.case-study-page .tracking-\[0\.2em\] { --tw-tracking: .2em; letter-spacing: 0.2em; }
+body main.case-study-page .tracking-\[0\.15em\] { --tw-tracking: .15em; letter-spacing: 0.15em; }
+body main.case-study-page .tracking-\[0\.16em\] { --tw-tracking: .16em; letter-spacing: 0.16em; }
+body main.case-study-page .tracking-\[0\.18em\] { --tw-tracking: .18em; letter-spacing: 0.18em; }
+body main.case-study-page .tracking-\[0\.22em\] { --tw-tracking: .22em; letter-spacing: 0.22em; }
+body main.case-study-page .tracking-\[0\.28em\] { --tw-tracking: .28em; letter-spacing: 0.28em; }
+body main.case-study-page .tracking-tight { --tw-tracking: var(--tracking-tight); letter-spacing: var(--tracking-tight); }
+body main.case-study-page .text-balance { text-wrap: balance; }
+body main.case-study-page .break-words { overflow-wrap: break-word; }
+body main.case-study-page .whitespace-pre { white-space: pre; }
+body main.case-study-page .text-black\/55 { color: rgba(0, 0, 0, 0.55); }
+@supports (color:color-mix(in lab, red, red)) {body main.case-study-page .text-black\/55 { color: color-mix(in oklab, var(--color-black) 55%, transparent); }}
+body main.case-study-page .text-bone { color: var(--color-bone); }
+body main.case-study-page .text-bone-dim { color: var(--color-bone-dim); }
+body main.case-study-page .text-ember { color: var(--color-ember); }
+body main.case-study-page .text-ember-bright { color: var(--color-ember-bright); }
+body main.case-study-page .text-ember\/70 { color: rgba(217, 102, 61, 0.7); }
+@supports (color:color-mix(in lab, red, red)) {body main.case-study-page .text-ember\/70 { color: color-mix(in oklab, var(--color-ember) 70%, transparent); }}
+body main.case-study-page .text-emerald-400 { color: var(--color-emerald-400); }
+body main.case-study-page .text-muted { color: var(--color-muted); }
+body main.case-study-page .uppercase { text-transform: uppercase; }
+body main.case-study-page .not-italic { font-style: normal; }
+body main.case-study-page .tabular-nums { --tw-numeric-spacing: tabular-nums; font-variant-numeric: var(--tw-ordinal,) var(--tw-slashed-zero,) var(--tw-numeric-figure,) var(--tw-numeric-spacing,) var(--tw-numeric-fraction,); }
+body main.case-study-page .\[font-variant-numeric\:tabular-nums\] { font-variant-numeric: tabular-nums; }
+body main.case-study-page .underline { text-decoration-line: underline; }
+body main.case-study-page .decoration-ember\/40 { text-decoration-color: rgba(217, 102, 61, 0.4); }
+@supports (color:color-mix(in lab, red, red)) {body main.case-study-page .decoration-ember\/40 { text-decoration-color: color-mix(in oklab, var(--color-ember) 40%, transparent); }}
+body main.case-study-page .decoration-ember\/50 { text-decoration-color: rgba(217, 102, 61, 0.5); }
+@supports (color:color-mix(in lab, red, red)) {body main.case-study-page .decoration-ember\/50 { text-decoration-color: color-mix(in oklab, var(--color-ember) 50%, transparent); }}
+body main.case-study-page .underline-offset-2 { text-underline-offset: 2px; }
+body main.case-study-page .underline-offset-\[3px\] { text-underline-offset: 3px; }
+body main.case-study-page .antialiased { -webkit-font-smoothing: antialiased; }
+body main.case-study-page .opacity-0 { opacity: 0; }
+body main.case-study-page .opacity-40 { opacity: 0.4; }
+body main.case-study-page .opacity-55 { opacity: 0.55; }
+body main.case-study-page .opacity-60 { opacity: 0.6; }
+body main.case-study-page .opacity-70 { opacity: 0.7; }
+body main.case-study-page .opacity-80 { opacity: 0.8; }
+body main.case-study-page .opacity-100 { opacity: 1; }
+body main.case-study-page .shadow-float { --tw-shadow: 0 40px 90px -40px var(--tw-shadow-color,#000000d9); box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow); }
+body main.case-study-page .shadow-panel { --tw-shadow: 0 1px 0 0 var(--tw-shadow-color,#ffffff08) inset, 0 24px 60px -30px var(--tw-shadow-color,#000000b3); box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow); }
+body main.case-study-page .ring { --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color,currentcolor); box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow); }
+body main.case-study-page .ring-2 { --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color,currentcolor); box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow); }
+body main.case-study-page .ring-emerald-400\/15 { --tw-ring-color: #00d29426; }
+@supports (color:color-mix(in lab, red, red)) {body main.case-study-page .ring-emerald-400\/15 { --tw-ring-color: color-mix(in oklab, var(--color-emerald-400) 15%, transparent); }}
+body main.case-study-page .blur-2xl { --tw-blur: blur(var(--blur-2xl)); filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,); }
+body main.case-study-page .blur-3xl { --tw-blur: blur(var(--blur-3xl)); filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,); }
+body main.case-study-page .blur-\[140px\] { --tw-blur: blur(140px); filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,); }
+body main.case-study-page .drop-shadow-\[0_12px_30px_rgba\(0\,0\,0\,0\.45\)\] { --tw-drop-shadow-size: drop-shadow(0 12px 30px var(--tw-drop-shadow-color,#00000073)); --tw-drop-shadow: var(--tw-drop-shadow-size); filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,); }
+body main.case-study-page .drop-shadow-\[0_14px_34px_rgba\(0\,0\,0\,0\.5\)\] { --tw-drop-shadow-size: drop-shadow(0 14px 34px var(--tw-drop-shadow-color,#00000080)); --tw-drop-shadow: var(--tw-drop-shadow-size); filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,); }
+body main.case-study-page .filter { filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,); }
+body main.case-study-page .backdrop-blur-md { --tw-backdrop-blur: blur(var(--blur-md)); backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,); }
+body main.case-study-page .backdrop-blur-sm { --tw-backdrop-blur: blur(var(--blur-sm)); backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,); }
+body main.case-study-page .transition { transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events; transition-timing-function: var(--tw-ease,var(--default-transition-timing-function)); transition-duration: var(--tw-duration,var(--default-transition-duration)); }
+body main.case-study-page .transition-\[grid-template-rows\,opacity\] { transition-property: grid-template-rows, opacity; transition-timing-function: var(--tw-ease,var(--default-transition-timing-function)); transition-duration: var(--tw-duration,var(--default-transition-duration)); }
+body main.case-study-page .transition-\[opacity\,transform\] { transition-property: opacity, transform; transition-timing-function: var(--tw-ease,var(--default-transition-timing-function)); transition-duration: var(--tw-duration,var(--default-transition-duration)); }
+body main.case-study-page .transition-all { transition-property: all; transition-timing-function: var(--tw-ease,var(--default-transition-timing-function)); transition-duration: var(--tw-duration,var(--default-transition-duration)); }
+body main.case-study-page .transition-colors { transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to; transition-timing-function: var(--tw-ease,var(--default-transition-timing-function)); transition-duration: var(--tw-duration,var(--default-transition-duration)); }
+body main.case-study-page .transition-opacity { transition-property: opacity; transition-timing-function: var(--tw-ease,var(--default-transition-timing-function)); transition-duration: var(--tw-duration,var(--default-transition-duration)); }
+body main.case-study-page .transition-transform { transition-property: transform, translate, scale, rotate; transition-timing-function: var(--tw-ease,var(--default-transition-timing-function)); transition-duration: var(--tw-duration,var(--default-transition-duration)); }
+body main.case-study-page .duration-200 { --tw-duration: .2s; transition-duration: 0.2s; }
+body main.case-study-page .duration-300 { --tw-duration: .3s; transition-duration: 0.3s; }
+body main.case-study-page .duration-500 { --tw-duration: .5s; transition-duration: 0.5s; }
+body main.case-study-page .duration-\[800ms\] { --tw-duration: .8s; transition-duration: 0.8s; }
+body main.case-study-page .ease-\[cubic-bezier\(0\.22\,1\,0\.36\,1\)\] { --tw-ease: cubic-bezier(.22,1,.36,1); transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1); }
+body main.case-study-page .ease-\[var\(--ease-premium\)\] { --tw-ease: var(--ease-premium); transition-timing-function: var(--ease-premium); }
+body main.case-study-page .outline-none { --tw-outline-style: none; outline-style: none; }
+body main.case-study-page .select-all { user-select: all; }
+body main.case-study-page .select-none { user-select: none; }
+@media (hover: hover) {body main.case-study-page .group-hover\:-translate-x-0\.5:is(:where(.group):hover *) { --tw-translate-x: calc(var(--spacing) * -.5); translate: var(--tw-translate-x) var(--tw-translate-y); }
+body main.case-study-page .group-hover\:translate-x-0\.5:is(:where(.group):hover *) { --tw-translate-x: calc(var(--spacing) * .5); translate: var(--tw-translate-x) var(--tw-translate-y); }
+body main.case-study-page .group-hover\:-translate-y-0\.5:is(:where(.group):hover *) { --tw-translate-y: calc(var(--spacing) * -.5); translate: var(--tw-translate-x) var(--tw-translate-y); }
+body main.case-study-page .group-hover\:scale-x-100:is(:where(.group):hover *) { --tw-scale-x: 100%; scale: var(--tw-scale-x) var(--tw-scale-y); }
+body main.case-study-page .group-hover\:scale-\[1\.04\]:is(:where(.group):hover *) { scale: 1.04; }
+body main.case-study-page .group-hover\:text-ember:is(:where(.group):hover *) { color: var(--color-ember); }
+body main.case-study-page .group-hover\/cs\:translate-x-0\.5:is(:where(.group\/cs):hover *) { --tw-translate-x: calc(var(--spacing) * .5); translate: var(--tw-translate-x) var(--tw-translate-y); }
+body main.case-study-page .group-hover\/cs\:-translate-y-0\.5:is(:where(.group\/cs):hover *) { --tw-translate-y: calc(var(--spacing) * -.5); translate: var(--tw-translate-x) var(--tw-translate-y); }
+body main.case-study-page .group-hover\/metric\:text-ember:is(:where(.group\/metric):hover *) { color: var(--color-ember); }
+body main.case-study-page .group-hover\/portrait\:opacity-100:is(:where(.group\/portrait):hover *) { opacity: 1; }}
+body main.case-study-page .placeholder\:text-muted::placeholder { color: var(--color-muted); }
+@media (hover: hover) {body main.case-study-page .hover\:border-ember:hover { border-color: var(--color-ember); }
+body main.case-study-page .hover\:border-ember\/40:hover { border-color: rgba(217, 102, 61, 0.4); }
+@supports (color:color-mix(in lab, red, red)) {body main.case-study-page .hover\:border-ember\/40:hover { border-color: color-mix(in oklab, var(--color-ember) 40%, transparent); }}
+body main.case-study-page .hover\:border-ember\/50:hover { border-color: rgba(217, 102, 61, 0.5); }
+@supports (color:color-mix(in lab, red, red)) {body main.case-study-page .hover\:border-ember\/50:hover { border-color: color-mix(in oklab, var(--color-ember) 50%, transparent); }}
+body main.case-study-page .hover\:bg-ember\/20:hover { background-color: rgba(217, 102, 61, 0.2); }
+@supports (color:color-mix(in lab, red, red)) {body main.case-study-page .hover\:bg-ember\/20:hover { background-color: color-mix(in oklab, var(--color-ember) 20%, transparent); }}
+body main.case-study-page .hover\:bg-surface:hover { background-color: var(--color-surface); }
+body main.case-study-page .hover\:text-bone:hover { color: var(--color-bone); }
+body main.case-study-page .hover\:text-ember:hover { color: var(--color-ember); }
+body main.case-study-page .hover\:text-ember-bright:hover { color: var(--color-ember-bright); }
+body main.case-study-page .hover\:decoration-ember:hover { text-decoration-color: var(--color-ember); }
+body main.case-study-page .hover\:opacity-100:hover { opacity: 1; }}
+body main.case-study-page .focus\:border-ember:focus { border-color: var(--color-ember); }
+body main.case-study-page .active\:text-bone:active { color: var(--color-bone); }
+body main.case-study-page .active\:text-ember:active { color: var(--color-ember); }
+body main.case-study-page .disabled\:opacity-60:disabled { opacity: 0.6; }
+body main.case-study-page .aria-\[invalid\=true\]\:border-ember[aria-invalid="true"] { border-color: var(--color-ember); }
+@media (min-width: 40rem) {body main.case-study-page .sm\:order-last { order: 9999; }
+body main.case-study-page .sm\:contents { display: contents; }
+body main.case-study-page .sm\:w-44 { width: calc(var(--spacing) * 44); }
+body main.case-study-page .sm\:w-64 { width: calc(var(--spacing) * 64); }
+body main.case-study-page .sm\:w-full { width: 100%; }
+body main.case-study-page .sm\:max-w-\[280px\] { max-width: 280px; }
+body main.case-study-page .sm\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0px, 1fr)); }
+body main.case-study-page .sm\:grid-cols-\[0\.85fr_1\.15fr\] { grid-template-columns: 0.85fr 1.15fr; }
+body main.case-study-page .sm\:grid-cols-\[1\.3fr_0\.7fr\] { grid-template-columns: 1.3fr 0.7fr; }
+body main.case-study-page .sm\:flex-row { flex-direction: row; }
+body main.case-study-page .sm\:items-center { align-items: center; }
+body main.case-study-page .sm\:items-end { align-items: flex-end; }
+body main.case-study-page .sm\:items-start { align-items: flex-start; }
+body main.case-study-page .sm\:justify-between { justify-content: space-between; }
+body main.case-study-page .sm\:gap-12 { gap: calc(var(--spacing) * 12); }
+body main.case-study-page :where(.sm\:space-y-36 > :not(:last-child)) { --tw-space-y-reverse: 0; margin-block-start: calc(calc(var(--spacing) * 36) * var(--tw-space-y-reverse)); margin-block-end: calc(calc(var(--spacing) * 36) * calc(1 - var(--tw-space-y-reverse))); }
+body main.case-study-page .sm\:p-7 { padding: calc(var(--spacing) * 7); }
+body main.case-study-page .sm\:p-8 { padding: calc(var(--spacing) * 8); }
+body main.case-study-page .sm\:px-8 { padding-inline: calc(var(--spacing) * 8); }
+body main.case-study-page .sm\:px-10 { padding-inline: calc(var(--spacing) * 10); }
+body main.case-study-page .sm\:py-32 { padding-block: calc(var(--spacing) * 32); }
+body main.case-study-page .sm\:py-36 { padding-block: calc(var(--spacing) * 36); }
+body main.case-study-page .sm\:text-2xl { font-size: var(--text-2xl); line-height: var(--tw-leading,var(--text-2xl--line-height)); }
+body main.case-study-page .sm\:text-3xl { font-size: var(--text-3xl); line-height: var(--tw-leading,var(--text-3xl--line-height)); }
+body main.case-study-page .sm\:text-5xl { font-size: var(--text-5xl); line-height: var(--tw-leading,var(--text-5xl--line-height)); }
+body main.case-study-page .sm\:text-6xl { font-size: var(--text-6xl); line-height: var(--tw-leading,var(--text-6xl--line-height)); }
+body main.case-study-page .sm\:text-lg { font-size: var(--text-lg); line-height: var(--tw-leading,var(--text-lg--line-height)); }
+body main.case-study-page .sm\:text-xl { font-size: var(--text-xl); line-height: var(--tw-leading,var(--text-xl--line-height)); }
+body main.case-study-page .sm\:text-\[2\.6rem\] { font-size: 2.6rem; }
+body main.case-study-page .sm\:text-\[2\.75rem\] { font-size: 2.75rem; }
+body main.case-study-page .sm\:text-\[4\.1rem\] { font-size: 4.1rem; }
+body main.case-study-page .sm\:text-\[4\.2rem\] { font-size: 4.2rem; }}
+@media (min-width: 48rem) {body main.case-study-page .md\:block { display: block; }
+body main.case-study-page .md\:flex { display: flex; }
+body main.case-study-page .md\:hidden { display: none; }
+body main.case-study-page .md\:inline-block { display: inline-block; }
+body main.case-study-page .md\:inline-flex { display: inline-flex; }
+body main.case-study-page .md\:translate-x-1\.5 { --tw-translate-x: calc(var(--spacing) * 1.5); translate: var(--tw-translate-x) var(--tw-translate-y); }
+body main.case-study-page .md\:grid-cols-\[1fr_1\.8fr\] { grid-template-columns: 1fr 1.8fr; }
+body main.case-study-page .md\:grid-cols-\[210px_1fr\] { grid-template-columns: 210px 1fr; }
+body main.case-study-page .md\:gap-10 { gap: calc(var(--spacing) * 10); }}
+@media (min-width: 64rem) {body main.case-study-page .lg\:order-1 { order: 1; }
+body main.case-study-page .lg\:order-2 { order: 2; }
+body main.case-study-page .lg\:order-none { order: 0; }
+body main.case-study-page .lg\:flex { display: flex; }
+body main.case-study-page .lg\:inline { display: inline; }
+body main.case-study-page .lg\:h-\[80vh\] { height: 80vh; }
+body main.case-study-page .lg\:min-h-dvh { min-height: 100dvh; }
+body main.case-study-page .lg\:w-56 { width: calc(var(--spacing) * 56); }
+body main.case-study-page .lg\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0px, 1fr)); }
+body main.case-study-page .lg\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0px, 1fr)); }
+body main.case-study-page .lg\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0px, 1fr)); }
+body main.case-study-page .lg\:grid-cols-\[0\.85fr_1\.15fr\] { grid-template-columns: 0.85fr 1.15fr; }
+body main.case-study-page .lg\:grid-cols-\[1\.1fr_0\.9fr\] { grid-template-columns: 1.1fr 0.9fr; }
+body main.case-study-page .lg\:grid-cols-\[1\.05fr_0\.95fr\] { grid-template-columns: 1.05fr 0.95fr; }
+body main.case-study-page .lg\:grid-cols-\[1\.5fr_1fr\] { grid-template-columns: 1.5fr 1fr; }
+body main.case-study-page .lg\:grid-cols-\[1\.55fr_1fr\] { grid-template-columns: 1.55fr 1fr; }
+body main.case-study-page .lg\:justify-end { justify-content: flex-end; }
+body main.case-study-page .lg\:gap-8 { gap: calc(var(--spacing) * 8); }
+body main.case-study-page .lg\:gap-16 { gap: calc(var(--spacing) * 16); }
+body main.case-study-page .lg\:gap-20 { gap: calc(var(--spacing) * 20); }
+body main.case-study-page .lg\:border-l { border-left-style: var(--tw-border-style); border-left-width: 1px; }
+body main.case-study-page .lg\:border-line { border-color: var(--color-line); }
+body main.case-study-page .lg\:pt-24 { padding-top: calc(var(--spacing) * 24); }
+body main.case-study-page .lg\:pb-24 { padding-bottom: calc(var(--spacing) * 24); }
+body main.case-study-page .lg\:pl-12 { padding-left: calc(var(--spacing) * 12); }
+body main.case-study-page .lg\:text-\[4\.7rem\] { font-size: 4.7rem; }}
+body main.case-study-page .\[\&_kbd\]\:rounded kbd { border-radius: var(--radius); }
+body main.case-study-page .\[\&_kbd\]\:border kbd { border-style: var(--tw-border-style); border-width: 1px; }
+body main.case-study-page .\[\&_kbd\]\:border-line kbd { border-color: var(--color-line); }
+body main.case-study-page .\[\&_kbd\]\:px-1 kbd { padding-inline: var(--spacing); }
+body main.case-study-page .\[\&_kbd\]\:py-0\.5 kbd { padding-block: calc(var(--spacing) * .5); }
+body main.case-study-page { --lightningcss-light: ; --lightningcss-dark: initial; color-scheme: dark; }
+body main.case-study-page { background-color: var(--color-ink); -webkit-font-smoothing: antialiased; text-rendering: optimizelegibility; overflow-x: hidden; }
+body main.case-study-page { background-color: var(--color-ink); color: var(--color-bone); font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif; font-feature-settings: "ss01", "cv01"; overflow-x: hidden; }
+body main.case-study-page ::selection { background-color: var(--color-ember); color: rgb(11, 13, 15); }
+body main.case-study-page :focus-visible { outline: 2px solid var(--color-ember); outline-offset: 2px; box-shadow: rgba(237, 232, 220, 0.28) 0px 0px 0px 4px; }
+@supports (color:color-mix(in lab, red, red)) {body main.case-study-page :focus-visible { box-shadow: 0 0 0 4px color-mix(in srgb, var(--color-bone) 28%, transparent); }}
+body main.case-study-page :focus-visible { border-radius: 3px; }
+body main.case-study-page .cmdk-input:focus-visible { box-shadow: none; outline: none; }
+body main.case-study-page ::-webkit-scrollbar { width: 10px; height: 10px; }
+body main.case-study-page ::-webkit-scrollbar-track { background: var(--color-ink); }
+body main.case-study-page ::-webkit-scrollbar-thumb { border: 2px solid var(--color-ink); background: rgb(35, 42, 48); border-radius: 999px; }
+body main.case-study-page ::-webkit-scrollbar-thumb:hover { background: rgb(49, 58, 66); }
+@media (prefers-reduced-motion: reduce) {body main.case-study-page *,body main.case-study-page ::before,body main.case-study-page ::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }}
+body main.case-study-page .grain { position: relative; }
+body main.case-study-page .grain::after { content: ""; pointer-events: none; opacity: 0.025; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); position: absolute; inset: 0px; }
+@keyframes float-bob { 
+  0%, 100% { transform: translateY(0px) rotate(-2deg); }
+  50% { transform: translateY(-10px) rotate(2deg); }
+}
+body main.case-study-page .float-bob { animation: 4s ease-in-out 0s infinite normal none running float-bob; }
+@keyframes page-in { 
+  0% { opacity: 0; transform: translateY(14px); }
+  100% { opacity: 1; transform: translateY(0px); }
+}
+body main.case-study-page .page-enter { animation: page-in .6s var(--ease-premium) both; }
+@media (prefers-reduced-motion: reduce) {body main.case-study-page .page-enter { animation: auto ease 0s 1 normal none running none; }}
+body main.case-study-page .cursor-dot { background: var(--color-ember); pointer-events: none; z-index: 100; border-radius: 999px; width: 8px; height: 8px; position: fixed; top: 0px; left: 0px; }
+body main.case-study-page .cursor-ring { border: 1px solid rgba(237, 232, 220, 0.35); width: 38px; height: 38px; position: fixed; top: 0px; left: 0px; }
+@supports (color:color-mix(in lab, red, red)) {body main.case-study-page .cursor-ring { border: 1px solid color-mix(in srgb, var(--color-bone) 35%, transparent); }}
+body main.case-study-page .cursor-ring { pointer-events: none; z-index: 100; border-radius: 999px; }
+@media (pointer: fine) {body main.case-study-page .cursor-active { cursor: none; }}
+body main.case-study-page .sr-only { clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border: 0px; width: 1px; height: 1px; margin: -1px; padding: 0px; position: absolute; overflow: hidden; }
+body main.case-study-page .skip-link { z-index: 200; border: 1px solid var(--color-field); background: var(--color-surface); color: var(--color-bone); font-family: var(--font-mono); transition: transform .2s var(--ease-premium); border-radius: 0.5rem; margin: 0.75rem; padding: 0.5rem 1rem; font-size: 0.8rem; position: fixed; top: 0px; left: 0px; transform: translateY(-150%); }
+body main.case-study-page .skip-link:focus { transform: translateY(0px); }
+@media print {body main.case-study-page header,body main.case-study-page footer,body main.case-study-page .cursor-dot,body main.case-study-page .cursor-ring,body main.case-study-page canvas { display: none !important; }
+body main.case-study-page { --lightningcss-light: initial; --lightningcss-dark: ; color-scheme: light; }
+body main.case-study-page { color: rgb(0, 0, 0); background: rgb(255, 255, 255); }}
+@property --tw-translate-x { syntax: "*"; inherits: false; initial-value: 0; }
+@property --tw-translate-y { syntax: "*"; inherits: false; initial-value: 0; }
+@property --tw-translate-z { syntax: "*"; inherits: false; initial-value: 0; }
+@property --tw-scale-x { syntax: "*"; inherits: false; initial-value: 1; }
+@property --tw-scale-y { syntax: "*"; inherits: false; initial-value: 1; }
+@property --tw-scale-z { syntax: "*"; inherits: false; initial-value: 1; }
+@property --tw-rotate-x { syntax: "*"; inherits: false; }
+@property --tw-rotate-y { syntax: "*"; inherits: false; }
+@property --tw-rotate-z { syntax: "*"; inherits: false; }
+@property --tw-skew-x { syntax: "*"; inherits: false; }
+@property --tw-skew-y { syntax: "*"; inherits: false; }
+@property --tw-space-y-reverse { syntax: "*"; inherits: false; initial-value: 0; }
+@property --tw-border-style { syntax: "*"; inherits: false; initial-value: solid; }
+@property --tw-gradient-position { syntax: "*"; inherits: false; }
+@property --tw-gradient-from { syntax: "<color>"; inherits: false; initial-value: #0000; }
+@property --tw-gradient-via { syntax: "<color>"; inherits: false; initial-value: #0000; }
+@property --tw-gradient-to { syntax: "<color>"; inherits: false; initial-value: #0000; }
+@property --tw-gradient-stops { syntax: "*"; inherits: false; }
+@property --tw-gradient-via-stops { syntax: "*"; inherits: false; }
+@property --tw-gradient-from-position { syntax: "<length-percentage>"; inherits: false; initial-value: 0%; }
+@property --tw-gradient-via-position { syntax: "<length-percentage>"; inherits: false; initial-value: 50%; }
+@property --tw-gradient-to-position { syntax: "<length-percentage>"; inherits: false; initial-value: 100%; }
+@property --tw-leading { syntax: "*"; inherits: false; }
+@property --tw-font-weight { syntax: "*"; inherits: false; }
+@property --tw-tracking { syntax: "*"; inherits: false; }
+@property --tw-ordinal { syntax: "*"; inherits: false; }
+@property --tw-slashed-zero { syntax: "*"; inherits: false; }
+@property --tw-numeric-figure { syntax: "*"; inherits: false; }
+@property --tw-numeric-spacing { syntax: "*"; inherits: false; }
+@property --tw-numeric-fraction { syntax: "*"; inherits: false; }
+@property --tw-shadow { syntax: "*"; inherits: false; initial-value: 0 0 #0000; }
+@property --tw-shadow-color { syntax: "*"; inherits: false; }
+@property --tw-shadow-alpha { syntax: "<percentage>"; inherits: false; initial-value: 100%; }
+@property --tw-inset-shadow { syntax: "*"; inherits: false; initial-value: 0 0 #0000; }
+@property --tw-inset-shadow-color { syntax: "*"; inherits: false; }
+@property --tw-inset-shadow-alpha { syntax: "<percentage>"; inherits: false; initial-value: 100%; }
+@property --tw-ring-color { syntax: "*"; inherits: false; }
+@property --tw-ring-shadow { syntax: "*"; inherits: false; initial-value: 0 0 #0000; }
+@property --tw-inset-ring-color { syntax: "*"; inherits: false; }
+@property --tw-inset-ring-shadow { syntax: "*"; inherits: false; initial-value: 0 0 #0000; }
+@property --tw-ring-inset { syntax: "*"; inherits: false; }
+@property --tw-ring-offset-width { syntax: "<length>"; inherits: false; initial-value: 0; }
+@property --tw-ring-offset-color { syntax: "*"; inherits: false; initial-value: #fff; }
+@property --tw-ring-offset-shadow { syntax: "*"; inherits: false; initial-value: 0 0 #0000; }
+@property --tw-blur { syntax: "*"; inherits: false; }
+@property --tw-brightness { syntax: "*"; inherits: false; }
+@property --tw-contrast { syntax: "*"; inherits: false; }
+@property --tw-grayscale { syntax: "*"; inherits: false; }
+@property --tw-hue-rotate { syntax: "*"; inherits: false; }
+@property --tw-invert { syntax: "*"; inherits: false; }
+@property --tw-opacity { syntax: "*"; inherits: false; }
+@property --tw-saturate { syntax: "*"; inherits: false; }
+@property --tw-sepia { syntax: "*"; inherits: false; }
+@property --tw-drop-shadow { syntax: "*"; inherits: false; }
+@property --tw-drop-shadow-color { syntax: "*"; inherits: false; }
+@property --tw-drop-shadow-alpha { syntax: "<percentage>"; inherits: false; initial-value: 100%; }
+@property --tw-drop-shadow-size { syntax: "*"; inherits: false; }
+@property --tw-backdrop-blur { syntax: "*"; inherits: false; }
+@property --tw-backdrop-brightness { syntax: "*"; inherits: false; }
+@property --tw-backdrop-contrast { syntax: "*"; inherits: false; }
+@property --tw-backdrop-grayscale { syntax: "*"; inherits: false; }
+@property --tw-backdrop-hue-rotate { syntax: "*"; inherits: false; }
+@property --tw-backdrop-invert { syntax: "*"; inherits: false; }
+@property --tw-backdrop-opacity { syntax: "*"; inherits: false; }
+@property --tw-backdrop-saturate { syntax: "*"; inherits: false; }
+@property --tw-backdrop-sepia { syntax: "*"; inherits: false; }
+@property --tw-duration { syntax: "*"; inherits: false; }
+@property --tw-ease { syntax: "*"; inherits: false; }
+@keyframes ping { 
+  75%, 100% { opacity: 0; transform: scale(2); }
+}
+@keyframes pulse { 
+  50% { opacity: 0.5; }
+}
+@keyframes bounce { 
+  0%, 100% { animation-timing-function: cubic-bezier(0.8, 0, 1, 1); transform: translateY(-25%); }
+  50% { animation-timing-function: cubic-bezier(0, 0, 0.2, 1); transform: none; }
+}
+body main.case-study-page{--animate-bounce:bounce 1s infinite;--animate-ping:ping 1s cubic-bezier(0, 0, .2, 1) infinite;--animate-pulse:pulse 2s cubic-bezier(.4, 0, .6, 1) infinite;--blur-2xl:40px;--blur-3xl:64px;--blur-md:12px;--blur-sm:8px;--color-black:#000;--color-bone:#ede8dc;--color-bone-dim:#c7c3ba;--color-dot-inactive:#2c3338;--color-ember:#d9663d;--color-ember-bright:#e8794e;--color-emerald-400:lab(75.0771% -60.7313 19.4147);--color-field:#5a646d;--color-ink:#0b0d0f;--color-ink-2:#0e1113;--color-line:#262b30;--color-muted:#8a929b;--color-surface:#121518;--color-white:#fff;--container-2xl:42rem;--container-3xl:48rem;--container-4xl:56rem;--container-6xl:72rem;--container-lg:32rem;--container-md:28rem;--container-sm:24rem;--container-xl:36rem;--default-font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";--default-mono-font-family:"Geist Mono", "Geist Mono Fallback";--default-transition-duration:.15s;--default-transition-timing-function:cubic-bezier(.4, 0, .2, 1);--ease-premium:cubic-bezier(.22, 1, .36, 1);--font-body:"Hanken Grotesk", "Hanken Grotesk Fallback";--font-body-src:"Hanken Grotesk", "Hanken Grotesk Fallback";--font-display-src:"Geist", "Geist Fallback";--font-mono:"Geist Mono", "Geist Mono Fallback";--font-mono-src:"Geist Mono", "Geist Mono Fallback";--font-sans:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";--font-weight-medium:500;--font-weight-semibold:600;--leading-relaxed:1.625;--lightningcss-dark:;--lightningcss-light:;--radius:.625rem;--radius-lg:.5rem;--radius-md:.375rem;--radius-sm:.25rem;--radius-xl:.75rem;--spacing:.25rem;--text-2xl:1.5rem;--text-2xl--line-height:calc(2 / 1.5);--text-3xl:1.875rem;--text-3xl--line-height:calc(2.25 / 1.875);--text-5xl:3rem;--text-5xl--line-height:1;--text-6xl:3.75rem;--text-6xl--line-height:1;--text-lg:1.125rem;--text-lg--line-height:calc(1.75 / 1.125);--text-sm:.875rem;--text-sm--line-height:calc(1.25 / .875);--text-xl:1.25rem;--text-xl--line-height:calc(1.75 / 1.25);--text-xs:.75rem;--text-xs--line-height:calc(1 / .75);--tracking-tight:-.025em;--tw-border-style:solid;--tw-drop-shadow-alpha:100%;--tw-gradient-from:rgba(0, 0, 0, 0);--tw-gradient-from-position:0%;--tw-gradient-to:rgba(0, 0, 0, 0);--tw-gradient-to-position:100%;--tw-gradient-via:rgba(0, 0, 0, 0);--tw-gradient-via-position:50%;--tw-inset-ring-shadow:0 0 #0000;--tw-inset-shadow:0 0 #0000;--tw-inset-shadow-alpha:100%;--tw-ring-offset-color:#fff;--tw-ring-offset-shadow:0 0 #0000;--tw-ring-offset-width:0px;--tw-ring-shadow:0 0 #0000;--tw-scale-x:1;--tw-scale-y:1;--tw-scale-z:1;--tw-shadow:0 0 #0000;--tw-shadow-alpha:100%;--tw-space-y-reverse:0;--tw-translate-x:0;--tw-translate-y:0;--tw-translate-z:0;font-family:var(--font-body),ui-sans-serif,system-ui,sans-serif;color:var(--color-bone);font-size:16px;line-height:1.5;overflow-x:clip;}
+body main.case-study-page{background-color:transparent;}
+body main.case-study-page h1{max-width:none;}
+@media(prefers-reduced-motion:reduce){body main.case-study-page *,body main.case-study-page *::before,body main.case-study-page *::after{animation:none!important;transition:none!important;}}

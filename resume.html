@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume · Shreya Chauhan</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" href="sources/icon.svg" sizes="any" type="image/svg+xml">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="sources/icon.svg" sizes="any" type="image/svg+xml">    
+    <link rel="stylesheet" href="styles.css?v=20260922-controls2">
+    <link rel="stylesheet" href="spec.css?v=20260922-controls2">
+    <link rel="stylesheet" href="spec-details.css?v=20260922-controls2">
 </head>
 <body>
+    <a class="skip-link" href="#top">Skip to content</a>
     <header class="site-header mobile-header">
         <nav class="nav" aria-label="Main navigation">
             <a class="logo" href="index.html">shreya.chauhan</a>
@@ -20,7 +20,7 @@
                 <a class="nav-link" href="about.html"><span>03</span>About</a>
             </div>
             <div class="nav-actions">
-                <div class="search" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="6"></circle><path d="m16 16 4 4"></path></svg><span>Search</span><kbd class="shortcut">Ctrl K</kbd></div>
+                <button type="button" class="search" aria-label="Search"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="spec-icon icon-search" aria-hidden="true"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg><span>Search</span><kbd class="shortcut">Ctrl K</kbd></button>
                 <a class="resume" href="resume.html" aria-current="page">Résumé</a>
                 <a class="touch" href="contact.html">Get in touch</a>
             </div>
@@ -40,7 +40,7 @@
         </div>
     </header>
 
-    <main class="resume-page" id="top">
+    <main class="resume-page" id="top" tabindex="-1">
         <span class="resume-corner-glyph" aria-hidden="true"></span>
         <section class="resume-intro" aria-labelledby="resume-title">
             <div class="resume-heading">
@@ -57,7 +57,6 @@
             <img src="sources/resume-pg1.png" alt="Shreya Chauhan résumé preview">
         </section>
     </main>
-    <script src="mobile-menu.js"></script>
 
     <footer class="site-footer resume-footer">
         <div class="footer-inner">
@@ -70,13 +69,12 @@
         </div>
     </footer>
 
-    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
-    <script>
-        const lenis = new Lenis({ autoRaf: false, smoothWheel: true, syncTouch: true, touchMultiplier: 1 });
-        document.documentElement.classList.add('lenis');
-        function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
-        requestAnimationFrame(raf);
-        document.querySelector('.footer-control.square').addEventListener('click', () => lenis.scrollTo(0, { duration: 1.15 }));
-    </script>
+    <script src="sources/vendor/gsap.min.js"></script>
+    <script src="sources/vendor/ScrollTrigger.min.js"></script>
+    <script src="sources/vendor/SplitText.min.js"></script>
+    <script src="sources/vendor/lenis.min.js"></script>
+    <script src="smooth-scroll.js?v=20260922-controls2"></script>
+    <script src="site.js?v=20260922-controls2"></script>
+    
 </body>
 </html>

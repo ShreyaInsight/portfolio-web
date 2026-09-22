@@ -1,0 +1,133 @@
+/* Final component corrections from the raw computed-style captures. */
+.projects-page{overflow-x:clip}
+.nav-links{gap:32px}
+.footer-top{display:flex;flex-direction:column;justify-content:space-between;gap:32px}
+.footer-links,.footer-social{gap:20px}
+.footer-bottom{display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between;gap:8px}
+.projects-page{padding-bottom:112px}.projects-intro{margin-bottom:0}
+.project-list{display:grid;gap:112px;margin-top:80px;padding-bottom:0}
+.detail-project,.ats-project{margin-bottom:0}
+.research-section{margin-top:128px;padding-top:64px;padding-bottom:0;border-bottom:0}
+.research-figure{padding:20px}.research-copy{padding:24px}
+.more-work-section{margin-top:112px;padding-top:64px;padding-bottom:0;border-top:1px solid var(--line)}
+.detail-links{margin-top:28px;gap:24px}.shield-list,.stats-list{gap:16px 28px}
+.preview-glow-frame{position:relative;isolation:isolate;min-width:0;order:0}
+.preview-glow-frame::before{content:'';position:absolute;inset:-32px;z-index:-1;pointer-events:none;border-radius:40px;background-image:linear-gradient(to right top,oklab(.642512 .119433 .0989074/.2) 0%,oklab(.642512 .119433 .0989074/.05) 50%,transparent 100%);filter:blur(64px)}
+.profile-facts>div{display:flex;align-items:baseline;justify-content:space-between;gap:16px}.profile-facts span{flex-shrink:0}
+.resume-intro{gap:24px}.resume-actions{gap:20px}
+.resume-preview-panel{max-width:840px;margin-top:56px;border:1px solid var(--line);box-shadow:0 40px 90px -40px rgb(0 0 0/.85)}
+@media(min-width:640px){.footer-top,.footer-bottom{flex-direction:row}.footer-bottom{align-items:center}.project-list{gap:144px}.research-figure{padding:28px}.research-copy{padding:32px}}
+@media(min-width:1024px){.preview-glow-frame{order:0}}
+.spec-icon{display:inline-block;width:16px;height:16px;flex-shrink:0;vertical-align:middle;transition:transform .3s cubic-bezier(.4,0,.2,1)}
+a:hover>.icon-up-right{transform:translate(2px,-2px)}
+.work-button:hover .icon-right,.send-button:hover .icon-right{transform:translateX(2px)}
+.contact-email>.spec-icon{width:20px;height:20px;color:var(--orange)}
+.scroll-hint .spec-icon{width:16px;height:16px;animation:spec-bounce 1s infinite}
+@keyframes spec-bounce{0%,100%{animation-timing-function:cubic-bezier(.8,0,1,1);transform:translateY(-25%)}50%{animation-timing-function:cubic-bezier(0,0,.2,1);transform:none}}
+.projects-page .eyebrow{font-family:var(--mono)}
+.portrait-wrap{position:relative;isolation:isolate;width:100%;max-width:320px}
+.portrait-wrap::before{content:'';position:absolute;inset:-10px;z-index:-1;border-radius:24px;pointer-events:none;background-image:linear-gradient(to right top,oklab(.642512 .119433 .0989074/.45) 0%,oklab(.642512 .119433 .0989074/.2) 50%,oklab(.642512 .119433 .0989074/.05) 100%);filter:blur(40px);opacity:.8;transition:opacity .5s cubic-bezier(.4,0,.2,1)}
+.portrait-wrap:hover::before{opacity:1}
+.preview,.detail-preview,.more-preview{border-radius:12px;background:var(--panel);box-shadow:0 40px 90px -40px rgb(0 0 0/.85)}
+.preview .browser-bar,.detail-preview .browser-bar,.more-preview .browser-bar{height:auto;min-height:31px;padding:10px 14px;background:rgb(11 13 15/.5)}
+.browser-dot{width:10px;height:10px;flex-shrink:0}
+.preview-image,.detail-preview>img,.more-preview>img{aspect-ratio:16/10;object-fit:cover;object-position:top;transition:transform .8s cubic-bezier(.22,1,.36,1)}
+.project:hover .preview-image,.detail-project:hover .detail-preview>img,.more-work-card:hover .more-preview>img{transform:scale(1.04)}
+.profile-photo{max-width:320px;box-shadow:none}.profile-facts{max-width:320px;margin-top:32px}
+.form-row input,.form-row textarea{padding:12px 16px;background:var(--panel);border-color:var(--color-field);transition:color .15s cubic-bezier(.4,0,.2,1),background-color .15s cubic-bezier(.4,0,.2,1),border-color .15s cubic-bezier(.4,0,.2,1)}
+.form-row input::placeholder,.form-row textarea::placeholder{color:var(--muted)}
+.form-row input:focus,.form-row textarea:focus{border-color:var(--orange);box-shadow:none}
+.form-row textarea{height:146px;min-height:146px;resize:none}
+:root{--body:'Hanken Grotesk','Hanken Grotesk Fallback',ui-sans-serif,system-ui,sans-serif;--display:Geist,'Geist Fallback';--mono:'Geist Mono','Geist Mono Fallback'}
+.logo,.footer-brand{font-size:14px;line-height:20px;font-weight:400;letter-spacing:normal}
+.availability{font-size:12px;line-height:16px;gap:12px;letter-spacing:normal}
+.intro{font-size:16.32px;line-height:26.52px}.intro em,.bio-copy em{font-weight:500}
+.hero h1 br{display:none}.hero h1{max-width:576px;text-wrap:balance}
+.hero h1 em{white-space:nowrap}
+.eyebrow{font-size:11.2px;line-height:16.8px;letter-spacing:2.464px}
+.all-projects,.path-link{font-size:14px;line-height:20px}.all-projects:hover,.path-link:hover{color:var(--orange)}
+.project-description{font-size:16px;line-height:24px}.project-status{font-size:12px;line-height:16px}
+.project-name{letter-spacing:normal;transition:color .15s}.project:hover .project-name{color:var(--orange)}
+.preview{aspect-ratio:auto}.preview-image{height:auto;aspect-ratio:16/10;object-fit:cover}.browser-bar{height:30px;padding:8px 12px;gap:6px}.browser-bar .url{font:400 10.4px/15.6px var(--mono);color:var(--muted);margin-left:12px}
+.capability-description{font-size:15.52px;line-height:25.22px}
+.session-head{font-size:11.52px;line-height:18.72px;letter-spacing:normal}.session-head>span:last-child{margin-left:8px;font-size:10.4px;line-height:16.9px;letter-spacing:2.08px}.session-head .dot:nth-child(3){background:var(--orange)}
+.typing-row{height:16.704px;min-height:16.704px;line-height:16.704px;white-space:pre;overflow:hidden}.session-lines{min-height:100.224px}.command{font-weight:400}
+.footer-location{font-size:12px;line-height:16px;margin-top:8px}.footer-note,.footer-credit{font-size:11.2px;line-height:16.8px}
+.mobile-menu{border-top-width:0}.mobile-header.is-open .mobile-menu{border-top-width:1px}
+.cursor-dot{width:8px;height:8px;border-radius:999px}.cursor-ring{width:38px;height:38px;border-radius:999px;border-color:rgb(237 232 220/.35)}
+.detail-copy>h2{font-size:24px;line-height:32px;margin:12px 0 0;letter-spacing:-.025em}.detail-subtitle{font:400 14px/20px var(--mono);color:var(--muted);margin:6px 0 20px}.detail-description{font-size:15.52px;line-height:25.22px}.tag-list span{font-size:12px;line-height:16px;padding:4px 10px;background:transparent}.detail-meta strong{font:400 12px/16px var(--mono)}
+.detail-links{font-size:14px;line-height:20px}.detail-links .case-study{padding:0;border:0;border-radius:0;background:none;color:var(--orange);font:400 14px/20px var(--mono)}.detail-links .case-study:hover{background:none;color:var(--color-ember-bright)}
+.research-intro{font-size:15.52px;line-height:25.22px;max-width:576px}.research-copy h2{font-size:20px;line-height:28px;margin:12px 0 0}.research-subtitle{font-size:12px;line-height:16px;margin-top:8px}.research-description{font-size:14px;line-height:22.75px;margin:16px 0 20px}.research-meta{font-size:12px;line-height:16px;color:var(--orange)}
+.more-work-grid{gap:64px 32px;margin-top:40px}.more-subtitle{font:400 12px/16px var(--mono);color:var(--muted)}
+.experience-date{font-size:12px;line-height:16px}.experience-location{font-size:12px;line-height:16px;letter-spacing:1.8px;margin-top:8px}.experience-detail li,.education-list li{font-size:15.2px;line-height:24.7px}.experience-detail li{color:var(--muted)}.certification-row strong{font:400 15.2px/22.8px var(--body)}.certification-row small{font-size:12px;line-height:16px}
+.profile-facts span{font-size:12px;line-height:16px;letter-spacing:.18em}.profile-facts strong{font-size:14px;line-height:20px;color:var(--ink);text-align:right}.bio-copy p{font-size:18px;line-height:29.25px}.now-block li{font-size:15.52px;line-height:25.22px}.tool-tags span{font-size:12.48px;line-height:18.72px;padding:4px 10px;border:0;border-radius:2px;background:var(--panel);color:var(--color-bone-dim)}
+.resume-open{font-size:14px;line-height:20px}.contact-email{font-weight:400}.contact-links a,.contact-links>span{font:400 14px/20px var(--mono)}.contact-links a{color:var(--ink)}
+.scroll-hint{display:flex;flex-direction:column;align-items:center;gap:8px;margin:80px auto -112px;width:max-content;font:400 9.6px/14.4px var(--mono);letter-spacing:.2em;color:var(--muted);text-decoration:none}.scroll-hint svg{width:14px;height:14px;color:var(--orange)}
+@media(min-width:640px){.intro{font-size:18px;line-height:29.25px}.detail-copy>h2{font-size:30px;line-height:36px}.research-copy h2{font-size:24px;line-height:32px}.experience-detail h2{font-size:24px;line-height:32px}.contact-email{font-size:24px;line-height:32px}.scroll-hint{margin-bottom:-112px}}
+/* Literal typography values, mapped by design-audit/component-map.cjs. */
+.logo,.footer-brand{font-family:"Geist Mono", "Geist Mono Fallback";font-size:14px;font-weight:400;line-height:20px;letter-spacing:normal;color:rgb(237, 232, 220)}
+.availability{font-family:"Geist Mono", "Geist Mono Fallback";font-size:12px;font-weight:400;line-height:16px;letter-spacing:normal;color:rgb(138, 146, 155)}
+.intro{font-family:"Hanken Grotesk", "Hanken Grotesk Fallback", ui-sans-serif, system-ui, sans-serif;font-size:16.32px;font-weight:400;line-height:26.52px;letter-spacing:normal;color:rgb(199, 195, 186)}
+.eyebrow{font-family:"Geist Mono", "Geist Mono Fallback";font-size:11.2px;font-weight:400;line-height:16.8px;letter-spacing:2.464px;color:rgb(138, 146, 155)}
+.all-projects{font-family:"Geist Mono", "Geist Mono Fallback";font-size:14px;font-weight:400;line-height:20px;letter-spacing:normal;color:rgb(138, 146, 155)}
+.path-link{font-family:"Geist Mono", "Geist Mono Fallback";font-size:14px;font-weight:400;line-height:20px;letter-spacing:normal;color:rgb(138, 146, 155)}
+.project-name{font-family:Geist, "Geist Fallback";font-size:20px;font-weight:600;line-height:28px;letter-spacing:normal;color:rgb(237, 232, 220)}
+.project-description{font-family:"Hanken Grotesk", "Hanken Grotesk Fallback", ui-sans-serif, system-ui, sans-serif;font-size:16px;font-weight:400;line-height:24px;letter-spacing:normal;color:rgb(199, 195, 186)}
+.project-status{font-family:"Geist Mono", "Geist Mono Fallback";font-size:12px;font-weight:400;line-height:16px;letter-spacing:normal;color:rgb(217, 102, 61)}
+.capability-description{font-family:"Hanken Grotesk", "Hanken Grotesk Fallback", ui-sans-serif, system-ui, sans-serif;font-size:15.52px;font-weight:400;line-height:25.22px;letter-spacing:normal;color:rgb(199, 195, 186)}
+.capability-number{font-family:"Geist Mono", "Geist Mono Fallback";font-size:12px;font-weight:600;line-height:16px;letter-spacing:normal;color:rgb(217, 102, 61)}
+.footer-location{font-family:"Geist Mono", "Geist Mono Fallback";font-size:12px;font-weight:400;line-height:16px;letter-spacing:normal;color:rgb(138, 146, 155)}
+.footer-note{font-family:"Geist Mono", "Geist Mono Fallback";font-size:11.2px;font-weight:400;line-height:16.8px;letter-spacing:normal;color:rgb(138, 146, 155)}
+.footer-credit{font-family:"Geist Mono", "Geist Mono Fallback";font-size:11.2px;font-weight:400;line-height:16.8px;letter-spacing:normal;color:rgb(138, 146, 155)}
+.detail-copy>h2{font-family:Geist, "Geist Fallback";font-size:24px;font-weight:600;line-height:32px;letter-spacing:-0.6px;color:rgb(237, 232, 220)}
+.detail-subtitle{font-family:"Geist Mono", "Geist Mono Fallback";font-size:14px;font-weight:400;line-height:20px;letter-spacing:normal;color:rgb(138, 146, 155)}
+.detail-description{font-family:"Hanken Grotesk", "Hanken Grotesk Fallback", ui-sans-serif, system-ui, sans-serif;font-size:15.52px;font-weight:400;line-height:25.22px;letter-spacing:normal;color:rgb(199, 195, 186)}
+.tag-list span{font-family:"Geist Mono", "Geist Mono Fallback";font-size:12px;font-weight:400;line-height:16px;letter-spacing:normal;color:rgb(138, 146, 155)}
+.research-intro{font-family:"Hanken Grotesk", "Hanken Grotesk Fallback", ui-sans-serif, system-ui, sans-serif;font-size:15.52px;font-weight:400;line-height:25.22px;letter-spacing:normal;color:rgb(199, 195, 186)}
+.research-copy h2{font-family:Geist, "Geist Fallback";font-size:20px;font-weight:600;line-height:28px;letter-spacing:-0.5px;color:rgb(237, 232, 220)}
+.research-subtitle{font-family:"Geist Mono", "Geist Mono Fallback";font-size:12px;font-weight:400;line-height:16px;letter-spacing:normal;color:rgb(138, 146, 155)}
+.research-description{font-family:"Hanken Grotesk", "Hanken Grotesk Fallback", ui-sans-serif, system-ui, sans-serif;font-size:14px;font-weight:400;line-height:22.75px;letter-spacing:normal;color:rgb(199, 195, 186)}
+.more-subtitle{font-family:"Geist Mono", "Geist Mono Fallback";font-size:12px;font-weight:400;line-height:16px;letter-spacing:normal;color:rgb(138, 146, 155)}
+.more-description{font-family:"Hanken Grotesk", "Hanken Grotesk Fallback", ui-sans-serif, system-ui, sans-serif;font-size:14px;font-weight:400;line-height:22.75px;letter-spacing:normal;color:rgb(199, 195, 186)}
+.experience-detail h2{font-family:Geist, "Geist Fallback";font-size:20px;font-weight:600;line-height:28px;letter-spacing:-0.5px;color:rgb(237, 232, 220)}
+.experience-summary{font-family:"Hanken Grotesk", "Hanken Grotesk Fallback", ui-sans-serif, system-ui, sans-serif;font-size:15.52px;font-weight:400;line-height:23.28px;letter-spacing:normal;color:rgb(199, 195, 186)}
+.experience-detail li{font-family:"Hanken Grotesk", "Hanken Grotesk Fallback", ui-sans-serif, system-ui, sans-serif;font-size:15.2px;font-weight:400;line-height:24.7px;letter-spacing:normal;color:rgb(138, 146, 155)}
+.education-list li{font-family:"Hanken Grotesk", "Hanken Grotesk Fallback", ui-sans-serif, system-ui, sans-serif;font-size:15.2px;font-weight:400;line-height:24.7px;letter-spacing:normal;color:rgb(199, 195, 186)}
+.profile-facts span{font-family:"Geist Mono", "Geist Mono Fallback";font-size:12px;font-weight:400;line-height:16px;letter-spacing:2.16px;color:rgb(138, 146, 155)}
+.profile-facts strong{font-family:"Geist Mono", "Geist Mono Fallback";font-size:14px;font-weight:400;line-height:20px;letter-spacing:normal;color:rgb(237, 232, 220)}
+.bio-copy p{font-family:"Hanken Grotesk", "Hanken Grotesk Fallback", ui-sans-serif, system-ui, sans-serif;font-size:18px;font-weight:400;line-height:29.25px;letter-spacing:normal;color:rgb(199, 195, 186)}
+.now-block li{font-family:"Hanken Grotesk", "Hanken Grotesk Fallback", ui-sans-serif, system-ui, sans-serif;font-size:15.52px;font-weight:400;line-height:25.22px;letter-spacing:normal;color:rgb(199, 195, 186)}
+.tool-tags span{font-family:"Geist Mono", "Geist Mono Fallback";font-size:12.48px;font-weight:400;line-height:18.72px;letter-spacing:normal;color:rgb(199, 195, 186)}
+.resume-open{font-family:"Geist Mono", "Geist Mono Fallback";font-size:14px;font-weight:400;line-height:20px;letter-spacing:normal;color:rgb(138, 146, 155)}
+.contact-intro{font-family:"Hanken Grotesk", "Hanken Grotesk Fallback", ui-sans-serif, system-ui, sans-serif;font-size:18px;font-weight:400;line-height:29.25px;letter-spacing:normal;color:rgb(199, 195, 186)}
+.contact-email{font-family:Geist, "Geist Fallback";font-size:20px;font-weight:400;line-height:28px;letter-spacing:normal;color:rgb(237, 232, 220)}
+.contact-links a{font-family:"Geist Mono", "Geist Mono Fallback";font-size:14px;font-weight:400;line-height:20px;letter-spacing:normal;color:rgb(237, 232, 220)}
+.contact-links>span{font-family:"Geist Mono", "Geist Mono Fallback";font-size:14px;font-weight:400;line-height:20px;letter-spacing:normal;color:rgb(138, 146, 155)}
+.form-row label{font-family:"Geist Mono", "Geist Mono Fallback";font-size:11.2px;font-weight:400;line-height:16.8px;letter-spacing:2.016px;color:rgb(138, 146, 155)}
+@media(min-width:640px){
+.intro{font-family:"Hanken Grotesk", "Hanken Grotesk Fallback", ui-sans-serif, system-ui, sans-serif;font-size:18px;font-weight:400;line-height:29.25px;letter-spacing:normal;color:rgb(199, 195, 186)}
+.detail-copy>h2{font-family:Geist, "Geist Fallback";font-size:30px;font-weight:600;line-height:36px;letter-spacing:-0.75px;color:rgb(237, 232, 220)}
+.research-copy h2{font-family:Geist, "Geist Fallback";font-size:24px;font-weight:600;line-height:32px;letter-spacing:-0.6px;color:rgb(237, 232, 220)}
+.experience-detail h2{font-family:Geist, "Geist Fallback";font-size:24px;font-weight:600;line-height:32px;letter-spacing:-0.6px;color:rgb(237, 232, 220)}
+.contact-email{font-family:Geist, "Geist Fallback";font-size:24px;font-weight:400;line-height:32px;letter-spacing:normal;color:rgb(237, 232, 220)}
+}
+/* Inspector-matched control transitions. */
+.nav-link{transition-property:color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;transition-duration:0.15s;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)}
+.resume{transition-property:color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;transition-duration:0.15s;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)}
+.touch{transition-property:color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;transition-duration:0.3s;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)}
+.search{transition-property:color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;transition-duration:0.15s;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)}
+.mobile-menu nav a{transition-property:color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;transition-duration:0.15s;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)}
+.mobile-menu-cta{transition-property:color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;transition-duration:0.15s;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)}
+.work-button,.cta-button{transition-property:color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;transition-duration:0.3s;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)}
+.resume-link{transition-property:color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;transition-duration:0.15s;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)}
+.all-projects{transition-property:color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;transition-duration:0.15s;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)}
+.path-link{transition-property:color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;transition-duration:0.15s;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)}
+.footer-link{transition-property:color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;transition-duration:0.15s;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)}
+.skip-link{transition-property:transform;transition-duration:0.2s;transition-timing-function:cubic-bezier(0.22, 1, 0.36, 1)}
+.resume-download{transition-property:color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;transition-duration:0.3s;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)}
+.resume-open{transition-property:color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;transition-duration:0.15s;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)}
+.send-button{transition-property:color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;transition-duration:0.3s;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)}
+.contact-email{transition-property:color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;transition-duration:0.15s;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)}
+.contact-links a{transition-property:color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;transition-duration:0.15s;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)}
+.detail-links .case-study{transition-property:color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;transition-duration:0.15s;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)}
+.nav-link{display:flex;align-items:center;gap:6px;padding:4px 0}.nav-link span{margin:0}.resume-link{display:inline-flex;align-items:center;gap:6px;padding:12px 4px;font-size:14px;line-height:20px}.all-projects,.path-link{display:inline-flex;align-items:center;gap:6px}

@@ -1,0 +1,3 @@
+const fs=require('fs'),cp=require('child_process');const cli='C:/Users/cshiv/AppData/Local/npm-cache/_npx/6de2aa2fded2970c/node_modules/agent-browser/bin/agent-browser.js';
+const code=`(()=>{const h=Array.from(document.querySelectorAll('h2')).find(e=>e.textContent==='Sunnify');let e=h;const parents=[];while(e&&e.tagName!=='MAIN'){parents.push({tag:e.tagName,class:e.className,html:e.outerHTML});e=e.parentElement;}return parents;})()`;
+const d=JSON.parse(cp.execFileSync(process.execPath,[cli,'eval','--stdin','--json'],{input:code,encoding:'utf8',maxBuffer:10e6})).data.result;fs.writeFileSync('design-audit/case-studies/index-sunnify.json',JSON.stringify(d,null,2));console.log(d.map(e=>({tag:e.tag,class:e.class,html:e.html.slice(0,180)})));

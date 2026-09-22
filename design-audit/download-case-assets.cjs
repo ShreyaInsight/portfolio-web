@@ -1,0 +1,2 @@
+const fs=require('fs');
+(async()=>{fs.mkdirSync('sources/case-studies',{recursive:true});for(const [url,name]of Object.entries(JSON.parse(fs.readFileSync('design-audit/case-studies/asset-manifest.json')))){const r=await fetch(url);if(!r.ok)throw Error(`${r.status} ${url}`);fs.writeFileSync('sources/case-studies/'+name,Buffer.from(await r.arrayBuffer()));console.log(name,r.headers.get('content-type'));}})().catch(e=>{console.error(e);process.exitCode=1});

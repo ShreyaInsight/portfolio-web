@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects · Shreya Chauhan</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" href="sources/icon.svg" sizes="any" type="image/svg+xml">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="sources/icon.svg" sizes="any" type="image/svg+xml">    
+    <link rel="stylesheet" href="styles.css?v=20260922-controls2">
+    <link rel="stylesheet" href="spec.css?v=20260922-controls2">
+    <link rel="stylesheet" href="spec-details.css?v=20260922-controls2">
 </head>
 <body>
+    <a class="skip-link" href="#top">Skip to content</a>
     <header class="site-header mobile-header">
         <nav class="nav" aria-label="Main navigation">
             <a class="logo" href="index.html">shreya.chauhan</a>
@@ -20,7 +20,7 @@
                 <a class="nav-link" href="about.html"><span>03</span>About</a>
             </div>
             <div class="nav-actions">
-                <div class="search" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="6"></circle><path d="m16 16 4 4"></path></svg><span>Search</span><kbd class="shortcut">Ctrl K</kbd></div>
+                <button type="button" class="search" aria-label="Search"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="spec-icon icon-search" aria-hidden="true"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg><span>Search</span><kbd class="shortcut">Ctrl K</kbd></button>
                 <a class="resume" href="resume.html">Résumé</a>
                 <a class="touch" href="contact.html">Get in touch</a>
             </div>
@@ -39,7 +39,7 @@
             <a class="mobile-menu-cta" href="contact.html">Get in touch</a>
         </div>
     </header>
-    <main class="projects-page" id="top">
+    <main class="projects-page" id="top" tabindex="-1">
         <section class="projects-intro" aria-labelledby="projects-title">
             <div class="eyebrow">PROJECTS</div>
             <h1 id="projects-title">Things I've built, end to end.</h1>
@@ -47,34 +47,47 @@
         </section>
 
         <section class="project-list" aria-label="Selected projects">
-            <article class="detail-project" id="basalt">
-                <div class="detail-preview">
+            <article class="detail-project" id="shreyadesk-ai">
+                <div class="preview-glow-frame"><div class="detail-preview">
                     <div class="browser-bar"><span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span></div>
-                    <div class="detail-preview-screen basalt-preview"><span class="hex"></span><span class="preview-kicker">HAZARD ANALYSIS / 01</span><h2>basalt</h2><div class="preview-rule"></div><p class="preview-copy">The hazard check NVIDIA<br>never shipped for sm_120.</p><small class="preview-note">sm_120 has no hardware interlock. One wrong wait count and the GPU reads a stale register and returns a wrong answer silently.</small><div class="instruction-label">SASS DEPENDENCY MAP</div><div class="instruction-map"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="preview-foot">stall ↗ latency &nbsp; · &nbsp; stale read, no fault, full speed</div></div>
-                </div>
+                    <img src="sources/reference to be replaced/market-hero.svg" alt="ShreyaDesk AI market dashboard illustration" loading="lazy">
+                </div></div>
                 <div class="detail-copy">
                     <div class="detail-meta"><span>01</span><span>2026</span><b></b><strong><i></i>Actively maintained</strong></div>
-                    <h2>basalt</h2>
-                    <p class="detail-subtitle">The check NVIDIA never shipped</p>
-                    <p class="detail-description">On NVIDIA sm_120 there is no hardware interlock. 21 bits of every instruction tell the GPU how long to wait, and a count one cycle short reads a stale register and returns a wrong answer at full speed, with no crash and no warning. Compilers write those bits; nothing read them back. Pointed at 2,762 kernels NVIDIA ships in CUDA, held out of every table it uses, basalt verifies 10,218,030 dependencies with zero errors.</p>
-                    <div class="tag-list"><span>Python</span><span>NVIDIA SASS</span><span>sm_120 / Blackwell</span><span>CUDA Driver API</span><span>ptxas / nvdisasm</span><span>ELF / cubin</span></div>
-                    <div class="shield-list"><span><b>DOI</b><em>10.5281/zenodo.22072811</em></span><span><b>pypi</b><em>v1.0.0</em></span></div>
-                    <div class="detail-links"><a class="case-study" href="#basalt">Case study ↗</a><a href="https://github.com/" target="_blank" rel="noreferrer"><span class="github-mark">◉</span> Source</a><a href="#docs">Docs</a></div>
+                    <h2>ShreyaDesk AI</h2>
+                    <p class="detail-subtitle">Indian equity research, with execution guardrails</p>
+                    <p class="detail-description">ShreyaDesk AI brings Indian equity research, technical scans, paper trading, and guarded live execution into one local dashboard. A React/Vite frontend works with a Python/FastAPI backend, cached NSE daily history, and Zerodha Kite Connect. OCC, RSI, Supertrend, SMA, and confirmed 3D workflows support research; account-ownership checks, persistent loss limits, order caps, and a kill switch guard execution. Live trading starts paused and must be explicitly enabled.</p>
+                    <div class="tag-list"><span>React</span><span>Vite</span><span>JavaScript</span><span>Python</span><span>FastAPI</span><span>SQLite</span><span>Kite Connect</span><span>Playwright</span></div>
+                    <div class="detail-links"><a class="case-study" href="projects/shreyadesk-ai/">Case study ↗</a><a href="sources/reference%20to%20be%20replaced/README%20(5).md" target="_blank" rel="noopener noreferrer">Project brief</a></div>
                 </div>
             </article>
-            <article class="detail-project ats-project" id="ats-screener">
+            <article class="detail-project ats-project" id="satellite-crop-health-scanner">
                 <div class="detail-copy">
                     <div class="detail-meta"><span>02</span><span>2026</span><b></b><strong><i></i>Actively maintained</strong></div>
-                    <h2>ATS Screener</h2>
-                    <p class="detail-subtitle">Your resume vs. 6 real enterprise ATS engines</p>
-                    <p class="detail-description">Most free ATS checkers hand you one invented score and paywall the rest. ATS Screener returns six honest scores from six real enterprise platforms, each modeling that vendor's own parser strictness, keyword strategy, and calibrated thresholds. Your resume is parsed entirely in your browser and never uploaded; only the extracted text is sent for AI scoring. A live counter has tracked 2,000+ people through it.</p>
-                    <div class="tag-list"><span>SvelteKit</span><span>TypeScript</span><span>pdfjs-dist</span><span>mammoth</span><span>Custom NLP</span><span>Gemma 3 27B</span></div>
-                    <div class="stats-list"><span><b>3,152</b><i></i><em>users served</em></span><span><b>6</b><em>real ATS engines</em></span></div>
-                    <div class="detail-links"><a class="case-study" href="#ats-screener">Case study ↗</a><a href="https://ats-screener.vercel.app/" target="_blank" rel="noreferrer">Live</a><a href="https://github.com/" target="_blank" rel="noreferrer"><span class="github-mark">◉</span> Source</a><a href="#docs">Docs</a></div>
+                    <h2>Satellite Crop Health Scanner</h2>
+                    <p class="detail-subtitle">Pixel-level crop health from Sentinel-2 imagery</p>
+                    <p class="detail-description">Satellite Crop Health Scanner converts aligned Sentinel-2 Level-2A B04 and B08 GeoTIFF bands into pixel-level NDVI analysis. It validates the full raster grid, handles invalid pixels safely, classifies vegetation with adjustable thresholds, and presents maps, distributions, and summary statistics. Results can be exported as a presentation-ready PNG, statistics CSV, or georeferenced NDVI GeoTIFF.</p>
+                    <div class="tag-list"><span>Python</span><span>Streamlit</span><span>NumPy</span><span>Rasterio</span><span>GeoTIFF</span><span>Matplotlib</span></div>
+                    <div class="stats-list"><span><b>2</b><em>Sentinel-2 bands</em></span><span><b>3</b><em>export formats</em></span></div>
+                    <div class="detail-links"><a class="case-study" href="projects/satellite-crop-health-scanner/">Case study ↗</a><a href="https://crop-health-scanner-ca54vhtxe6wnnbpje9ict2.streamlit.app/" target="_blank" rel="noopener noreferrer">Live</a><a href="https://github.com/ShreyaInsight/crop-health-scanner" target="_blank" rel="noopener noreferrer"><span class="github-mark">◉</span> Source</a></div>
                 </div>
-                <div class="detail-preview ats-detail-preview">
-                    <div class="browser-bar"><span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span><span class="url">ats-screener.vercel.app</span></div>
-                    <div class="ats-screen"><div class="ats-nav"><strong>ATS <span>Screener</span></strong><nav>Home &nbsp; Screener &nbsp; About &nbsp; Docs</nav><small>◉</small><button>Get Free</button><em>Sign In</em></div><div class="ats-hero"><label>RESUME INTELLIGENCE / 02</label><h2>Your Resume vs.<br><span>Real ATS Systems</span></h2><p>See how your resume performs across Workday, Greenhouse, Lever, and more.</p><div class="ats-actions"><button>Check My Resume <b>→</b></button><a>Learn How It Works</a></div><div class="score-pills"><span>Workday <b>82</b></span><span>Greenhouse <b>76</b></span><span>Lever <b>89</b></span></div></div><div class="ats-stat-strip"><span><b>3,152</b><small>resumes checked</small></span><span><b>6</b><small>real engines</small></span><span><b>100%</b><small>private parsing</small></span><span><b>24/7</b><small>available</small></span></div></div>
+                <div class="preview-glow-frame"><div class="detail-preview ats-detail-preview">
+                    <div class="browser-bar"><span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span><span class="url">crop-health-scanner.streamlit.app</span></div>
+                    <img src="sources/reference to be replaced/Satellite Crop Health Scanner.png" alt="Satellite Crop Health Scanner interface" loading="lazy"></div></div>
+            </article>
+            <article class="detail-project" id="financialflow">
+                <div class="preview-glow-frame"><div class="detail-preview">
+                    <div class="browser-bar"><span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span></div>
+                    <img src="sources/reference to be replaced/Financial Flow.png" alt="FinancialFlow screenshot" loading="lazy">
+                </div></div>
+                <div class="detail-copy">
+                    <div class="detail-meta"><span>03</span><span>2024</span><b></b><strong><i></i>Actively maintained</strong></div>
+                    <h2>FinancialFlow</h2>
+                    <p class="detail-subtitle">Income, budgets, and goals in one clear view</p>
+                    <p class="detail-description">FinancialFlow brings income, expenses, category budgets, and savings goals into one personal finance dashboard. Transactions update balances and monthly summaries, while interactive line, bar, doughnut, and radar charts reveal spending patterns and financial progress. Built with Next.js and TypeScript, it saves data in browser local storage so users can return to their records without creating an account.</p>
+                    <div class="tag-list"><span>Next.js</span><span>TypeScript</span><span>React</span><span>Chart.js</span><span>Framer Motion</span><span>Tailwind CSS</span></div>
+                    <div class="detail-links"><a class="case-study" href="projects/financialflow/">Case study ↗</a><a href="sources/reference%20to%20be%20replaced/README%20FinancialFlow.md" target="_blank" rel="noopener noreferrer">Project brief</a></div>
+                </div>
             </article>
         </section>
         <section class="research-section" id="research" aria-labelledby="research-title">
@@ -82,7 +95,7 @@
             <p class="research-intro">Most students never write a research paper unaffiliated with any institution. I did: preregistered, reproducible end to end, with a real DOI.</p>
             <article class="research-card">
                 <div class="research-figure"><img src="sources/semantic-cache-figure.svg" alt="Academic figure explaining cosine similarity and the birth of a false cache hit"></div>
-                <div class="research-copy"><div class="research-meta"><strong>Independent research</strong><span>·</span><span>2026</span></div><h2 id="research-title">When Semantic Caches Lie</h2><p class="research-subtitle">Independent research, sole author&nbsp; · &nbsp;21 pages</p><p class="research-description">Why one similarity threshold cannot make an LLM cache both safe and useful across domains. A preregistered, fully reproducible study, written, run, and typeset solo.</p><a class="research-link" href="#research">Read the case study ↗</a></div>
+                <div class="research-copy"><div class="research-meta"><strong>Independent research</strong><span>·</span><span>2026</span></div><h2 id="research-title">When Semantic Caches Lie</h2><p class="research-subtitle">Independent research, sole author&nbsp; · &nbsp;21 pages</p><p class="research-description">Why one similarity threshold cannot make an LLM cache both safe and useful across domains. A preregistered, fully reproducible study, written, run, and typeset solo.</p><a class="research-link" href="research/">Read the case study ↗</a></div>
             </article>
         </section>
         <section class="more-work-section" id="more-work" aria-labelledby="more-work-title">
@@ -93,68 +106,41 @@
                     <div class="more-card-meta"><h2>Axelot</h2><span>2025</span></div>
                     <p class="more-subtitle">Conflict-free real-time docs for developers<br>Collaborative two-person build</p>
                     <p class="more-description">A real-time collaborative writing platform where developers co-edit rich technical documents with live cursors, AI assistance, and one-click publishing.</p>
-                    <a class="more-link" href="#more-work">Case study ↗</a>
+                    <a class="more-link" href="projects/axelot/">Case study ↗</a>
                 </article>
                 <article class="more-work-card">
-                    <div class="more-preview"><div class="browser-bar"><span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span><span class="url">netdash-toolkit.vercel.app/</span></div><img src="sources/more-work-2.svg" alt="Netdash network tools dashboard preview"></div>
+                    <div class="more-preview"><div class="browser-bar"><span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span><span class="url">netdash-toolkit.vercel.app/</span></div><img src="sources/reference/netdash.webp" alt="Netdash network tools dashboard preview"></div>
                     <div class="more-card-meta"><h2>Netdash</h2><span>2025</span></div>
                     <p class="more-subtitle">40+ network tools in one app</p>
                     <p class="more-description">A cross-platform network engineering workbench: 40+ tools, RFC-correct IP math in the browser, and a native Electron backend for real ping, traceroute, and port scanning.</p>
-                    <a class="more-link" href="#more-work">Case study ↗</a>
+                    <a class="more-link" href="projects/netdash/">Case study ↗</a>
                 </article>
                 <article class="more-work-card">
                     <div class="more-preview more-game-preview"><div class="browser-bar"><span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span></div><img src="sources/more-work-3.svg" alt="KnifeThrow arcade game preview"></div>
                     <div class="more-card-meta"><h2>KnifeThrow</h2><span>2022</span></div>
                     <p class="more-subtitle">An arcade game, no engine, pure Java</p>
                     <p class="more-description">A complete 2D knife-throwing arcade game built from scratch on raw Java Swing/AWT, with a hand-rolled game loop, collision, particles, sound, and a persistent shop.</p>
-                    <a class="more-link" href="#more-work">Case study ↗</a>
+                    <a class="more-link" href="projects/knifethrow/">Case study ↗</a>
                 </article>
             </div>
         </section>
     </main>
-    <script src="mobile-menu.js"></script>
     <footer class="site-footer">
         <div class="footer-inner">
             <div class="footer-top">
                 <div><div class="footer-brand">shreya.chauhan</div><div class="footer-location">Software Developer, Dehradun, IN</div></div>
-                <nav class="footer-links" aria-label="Footer navigation"><a class="footer-link" href="projects.html">Projects</a><a class="footer-link" href="index.html#work">Work</a><a class="footer-link" href="index.html#about">About</a></nav>
+                <nav class="footer-links" aria-label="Footer navigation"><a class="footer-link" href="projects.html">Projects</a><a class="footer-link" href="work.html">Work</a><a class="footer-link" href="about.html">About</a></nav>
                 <nav class="footer-social" aria-label="Social links"><a class="footer-link" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a><a class="footer-link" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a><a class="footer-link" href="mailto:cshreya2005@gmail.com">Email</a></nav>
             </div>
             <div class="footer-bottom"><div class="footer-note">© 2026 Shreya Chauhan</div><div class="footer-controls" aria-label="Page controls"><button class="footer-control" type="button" aria-label="Previous section">←</button><button class="footer-control square" type="button" aria-label="Scroll to top">□</button><button class="footer-control" type="button" aria-label="Next section">→</button></div><div class="footer-credit">Designed and built from scratch.</div></div>
         </div>
     </footer>
-    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
-    <script>
-        const lenis = new Lenis({
-            autoRaf: false,
-            smoothWheel: true,
-            syncTouch: true,
-            touchMultiplier: 1
-        });
-        document.documentElement.classList.add('lenis');
-
-        function raf(time) {
-            lenis.raf(time);
-            requestAnimationFrame(raf);
-        }
-        requestAnimationFrame(raf);
-
-        document.querySelectorAll('a[href^="#"]').forEach((link) => {
-            link.addEventListener('click', (event) => {
-                const target = document.querySelector(link.getAttribute('href'));
-                if (!target) return;
-                event.preventDefault();
-                lenis.scrollTo(target, { offset: -84, duration: 1.15 });
-            });
-        });
-
-        document.querySelector('.project-top-control')?.addEventListener('click', () => {
-            lenis.scrollTo(0, { duration: 1.15 });
-        });
-
-        document.querySelector('.footer-control.square')?.addEventListener('click', () => {
-            lenis.scrollTo(0, { duration: 1.15 });
-        });
-    </script>
+    <script src="sources/vendor/gsap.min.js"></script>
+    <script src="sources/vendor/ScrollTrigger.min.js"></script>
+    <script src="sources/vendor/SplitText.min.js"></script>
+    <script src="sources/vendor/lenis.min.js"></script>
+    <script src="smooth-scroll.js?v=20260922-controls2"></script>
+    <script src="site.js?v=20260922-controls2"></script>
+    
 </body>
 </html>
