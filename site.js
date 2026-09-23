@@ -19,7 +19,7 @@
  document.addEventListener('click',e=>{if(menuOpen&&!header.contains(e.target))setMenu(false);});
  matchMedia('(min-width:768px)').addEventListener('change',e=>{if(e.matches)setMenu(false);});
  const current=/\/(?:projects\/|research\/)/.test(location.pathname)?'projects.html':location.pathname.split('/').pop()||'index.html';
- document.querySelectorAll('.nav a,.mobile-menu a').forEach(a=>{a.removeAttribute('aria-current');if(a.getAttribute('href')===current){a.setAttribute('aria-current','page');a.classList.add('is-active');}});
+ document.querySelectorAll('.nav a,.mobile-menu a').forEach(a=>{a.removeAttribute('aria-current');a.classList.remove('active','is-active');if(a.getAttribute('href')===current){a.setAttribute('aria-current','page');a.classList.add('is-active');}});
  function scrollState(){header.classList.toggle('is-scrolled',scrollY>12);document.querySelector('.scroll-top')?.classList.toggle('visible',scrollY>500);}
  window.addEventListener('scroll',scrollState,{passive:true});scrollState();
  document.querySelectorAll('[data-scroll-top]').forEach(b=>b.addEventListener('click',()=>scroller.scrollTo(0)));

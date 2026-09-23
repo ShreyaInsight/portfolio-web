@@ -76,6 +76,13 @@ container.appendChild(renderer.domElement);
 
 //Set how far the camera will be from the 3D model
 camera.position.set(0, 0.2, objToRender === "dino" ? 25 : 10.5);
+// View the laptop straight on from above, retaining the original camera distance.
+if (objToRender !== "dino") {
+  const viewingAngle = THREE.MathUtils.degToRad(27);
+  const distance = camera.position.length();
+  camera.position.set(0, distance * Math.sin(viewingAngle), distance * Math.cos(viewingAngle));
+  camera.lookAt(0, 0, 0);
+}
 
 //Add lights to the scene, so we can actually see the 3D model
 const topLight = new THREE.DirectionalLight(0xffffff, 1); // (color, intensity)
@@ -137,7 +144,7 @@ renderer.domElement.addEventListener("pointerdown", (event) => {
 renderer.domElement.addEventListener("pointermove", (event) => {
   if (!isDragging || !object) return;
   const horizontalMovement = event.clientX - previousPointerX;
-  rotationVelocityY = horizontalMovement * 0.02;
+  rotationVelocityY = horizontalMovement * (event.pointerType === 'mouse' ? 0.005 : 0.02);
   userRotationY += rotationVelocityY;
   previousPointerX = event.clientX;
 });

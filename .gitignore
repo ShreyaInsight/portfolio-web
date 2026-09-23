@@ -8,6 +8,7 @@ node_modules/
 /build/
 coverage/
 *.tsbuildinfo
+waste.html
 
 # Local environment and credentials (keep shareable templates)
 .env

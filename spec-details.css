@@ -131,3 +131,69 @@ a:hover>.icon-up-right{transform:translate(2px,-2px)}
 .contact-links a{transition-property:color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;transition-duration:0.15s;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)}
 .detail-links .case-study{transition-property:color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;transition-duration:0.15s;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)}
 .nav-link{display:flex;align-items:center;gap:6px;padding:4px 0}.nav-link span{margin:0}.resume-link{display:inline-flex;align-items:center;gap:6px;padding:12px 4px;font-size:14px;line-height:20px}.all-projects,.path-link{display:inline-flex;align-items:center;gap:6px}
+
+/* Live-reference desktop header hover and current-page states. */
+.site-header .nav-link {
+  position: relative;
+  color: #8a929b;
+}
+.site-header .nav-link:hover,
+.site-header .nav-link[aria-current="page"] { color: #ede8dc; }
+.site-header .nav-link > span { color: #8a929b; line-height: 1.5; }
+.site-header .nav-link[aria-current="page"] > span { color: #d9663d; }
+.site-header .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: auto;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background: #d9663d;
+  opacity: 1;
+  transform: none;
+  scale: 0 1;
+  transform-origin: left center;
+  transition-property: transform, translate, scale, rotate;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(.22, 1, .36, 1);
+}
+.site-header .nav-link:hover::after,
+.site-header .nav-link[aria-current="page"]::after { scale: 1; }
+.site-header .resume { color: #8a929b; text-decoration: none; }
+.site-header .resume:hover { color: #ede8dc; }
+.site-header .touch {
+  color: #ede8dc;
+  border-color: #262b30;
+  background: transparent;
+  text-decoration: none;
+}
+.site-header .touch:hover { color: #d9663d; border-color: #d9663d; background: transparent; }
+.site-header .search {
+  color: #8a929b;
+  border-color: #262b30;
+  background: oklab(0.193825 -0.00283895 -0.00712426 / 0.4);
+}
+.site-header .search:hover {
+  color: #ede8dc;
+  border-color: oklab(0.642512 0.119433 0.0989074 / 0.4);
+}
+.site-header .search svg { color: #8a929b; }
+.site-header .search:hover svg { color: #d9663d; }
+.site-header .search .shortcut { color: #8a929b; border-color: #262b30; }
+.site-header :is(.nav-link, .resume, .touch, .search),
+.site-header .search svg {
+  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+}
+.site-header .touch { transition-duration: 300ms; }
+
+/* Keep the entire wide ShreyaDesk artwork visible in the 16:10 previews. */
+.preview > img[src$="market-hero.svg"],
+.detail-preview > img[src$="market-hero.svg"],
+#main-content img[src$="market-hero.svg"] {
+  object-fit: contain;
+  object-position: center;
+  background-color: #0b0d0f;
+}
