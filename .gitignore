@@ -8,7 +8,19 @@ node_modules/
 /build/
 coverage/
 *.tsbuildinfo
-waste.html
+
+# Local hosting and tooling state
+.vercel/
+.turbo/
+.agent-browser/
+.nyc_output/
+
+# Root-level scratch pages and unused design references
+/waste*.html
+/baawe.html
+/sources/index1.html
+/sunny-patel-reference*.svg
+/banner.svg
 
 # Local environment and credentials (keep shareable templates)
 .env
@@ -27,6 +39,8 @@ __pycache__/
 *.temp
 *.swp
 *.swo
+*.bak
+*.orig
 *~
 
 # Operating-system files
@@ -53,6 +67,10 @@ blob-report/
 /design-audit/**/*.jpg
 /design-audit/**/*.webp
 /design-audit/**/*.glb
+/design-audit/**/*.jpeg
+/design-audit/**/*.webm
+/design-audit/**/*.mp4
+/design-audit/**/*.zip
 /design-audit/sources/
 /design-audit/case-studies/sources/
 /design-audit/exposed-styles.css
