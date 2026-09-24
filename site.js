@@ -18,7 +18,7 @@
  menu.addEventListener('click',e=>{if(e.target.closest('a'))setMenu(false);});
  document.addEventListener('click',e=>{if(menuOpen&&!header.contains(e.target))setMenu(false);});
  matchMedia('(min-width:768px)').addEventListener('change',e=>{if(e.matches)setMenu(false);});
- const current=/\/(?:projects\/|research\/)/.test(location.pathname)?'projects.html':location.pathname.split('/').pop()||'index.html';
+ const current=/\/(?:projects\/|research\/)/.test(location.pathname)?'projects.html':location.pathname==='/'||location.pathname==='/index.html'?'/':location.pathname.split('/').pop();
  document.querySelectorAll('.nav a,.mobile-menu a').forEach(a=>{a.removeAttribute('aria-current');a.classList.remove('active','is-active');if(a.getAttribute('href')===current){a.setAttribute('aria-current','page');a.classList.add('is-active');}});
  function scrollState(){header.classList.toggle('is-scrolled',scrollY>12);document.querySelector('.scroll-top')?.classList.toggle('visible',scrollY>500);}
  window.addEventListener('scroll',scrollState,{passive:true});scrollState();
@@ -26,7 +26,7 @@
  document.querySelector('[data-scroll-projects]')?.addEventListener('click',()=>scroller.scrollTo('#projects'));
  document.querySelector('main')?.classList.add('page-enter');
  document.querySelector('.ember-glow')?.classList.add('is-visible');
- const destinations=[['Home','index.html'],['Projects','projects.html'],['Work','work.html'],['About','about.html'],['Résumé','resume.html'],['Contact','contact.html']];
+ const destinations=[['Home','/'],['Projects','projects.html'],['Work','work.html'],['About','about.html'],['Résumé','resume.html'],['Contact','contact.html']];
  let overlay,previousFocus;
  function closeSearch(){if(!overlay)return;overlay.remove();overlay=null;scroller.start();previousFocus?.focus();}
  function openSearch(){
